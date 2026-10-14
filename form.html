@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Form and Function: an interactive interface component playground.">
+    <title>Form &amp; Function - Component playground</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="demo.js" defer></script>
+  </head>
+  <body class="system-demo">
+    <header class="demo-nav"><a href="../index.html#work">&#8592; Back to portfolio</a><span>ILLUSTRATIVE PROJECT / 03</span></header>
+    <main class="demo-main">
+      <!-- EDIT: SYSTEM INTRO -->
+      <p class="kicker">FORM / FUNCTION</p>
+      <h1>Small details.<br>Better systems.</h1>
+      <p class="intro">A living collection of simple, useful interface components.<br>Change a few things. See how they fit together.</p>
+      <!-- PLAYGROUND CONTROLS -->
+      <section class="playground" aria-labelledby="playground-title">
+        <div class="playground-controls">
+          <h2 id="playground-title">Make it your own.</h2>
+          <button class="secondary" id="theme-toggle" aria-pressed="false">Light preview</button>
+          <label for="spacing-control">Component spacing <output id="spacing-value">24px</output></label>
+          <input id="spacing-control" type="range" min="12" max="40" value="24" step="4">
+          <p class="small-note">The preview uses shared colour and spacing tokens.</p>
+        </div>
+        <div class="component-preview" id="component-preview">
+          <p class="kicker">INTERFACE PREVIEW / 01</p>
+          <h2>Good design feels<br>like second nature.</h2>
+          <p>Clear typography. Comfortable spacing. A little personality.</p>
+          <div class="swatches" aria-label="Palette"><span style="background:#96c8a2">Eton Blue<br>#96C8A2</span><span style="background:#172b4d;color:#e2eae7">Navy<br>#172B4D</span></div>
+          <div class="sample-actions"><button class="primary" id="sample-action">Try a button &#8599;</button><button class="secondary" id="sample-reset">Reset preview</button></div>
+          <label class="switch-row"><span>Example notifications</span><input type="checkbox" id="sample-switch" role="switch"><span class="switch-track" aria-hidden="true"></span></label>
+          <p class="small-note" id="switch-status">Notifications are off in this preview.</p>
+          <label for="sample-name">A friendly input</label>
+          <input id="sample-name" placeholder="Type something here..." maxlength="60">
+          <p id="sample-feedback" role="status">Try a component to see its feedback.</p>
+        </div>
+      </section>
+      <footer class="demo-footer"><span>FORM &amp; FUNCTION / INTERACTIVE CONCEPT</span><a href="../index.html#contact">Build something together &#8599;</a></footer>
+    </main>
+  </body>
+</html>

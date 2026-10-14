@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Orbit: a working focus timer and task-list concept.">
+    <title>Orbit - Your space to focus</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="demo.js" defer></script>
+  </head>
+  <body class="focus-demo">
+    <header class="demo-nav"><a href="../index.html#work">&#8592; Back to portfolio</a><span>ILLUSTRATIVE PROJECT / 02</span></header>
+    <main class="demo-main focus-main">
+      <!-- EDIT: PRODUCT NAME AND INTRO -->
+      <p class="kicker">&#9673; ORBIT / FOCUS, SIMPLIFIED.</p>
+      <h1>A little space.<br>A little more focus.</h1>
+      <p class="intro">Choose one thing. Give it your attention. Take a breath.</p>
+      <!-- TIMER: durations in minutes are declared in data-minutes. -->
+      <section class="timer-panel" aria-label="Focus timer">
+        <div class="segments" role="group" aria-label="Timer mode">
+          <button data-minutes="25" aria-pressed="true">Focus</button>
+          <button data-minutes="5" aria-pressed="false">Short break</button>
+          <button data-minutes="15" aria-pressed="false">Long break</button>
+        </div>
+        <div class="timer-orbit"><time id="timer-display" role="timer" aria-label="Time remaining">25:00</time></div>
+        <p id="timer-status" role="status">Ready when you are.</p>
+        <div class="timer-actions"><button class="primary" id="timer-start">Start focus</button><button class="secondary" id="timer-reset">Reset</button></div>
+        <p class="small-note">A gentle reminder: keep this page open while the timer runs.</p>
+      </section>
+      <!-- TASKS: stored only on this browser when storage is available. -->
+      <section class="task-panel" aria-labelledby="task-title">
+        <div class="panel-heading"><h2 id="task-title">One thing at a time.</h2><span id="task-count" class="kicker">0 REMAINING</span></div>
+        <form id="task-form"><label class="sr-only" for="task-input">New task</label><input id="task-input" maxlength="120" placeholder="What would you like to work on?" required><button class="primary" type="submit">Add +</button></form>
+        <ul id="task-list"></ul>
+        <p id="task-feedback" class="small-note" role="status"></p>
+      </section>
+      <footer class="demo-footer"><span>ORBIT / A WORKING CONCEPT</span><a href="../index.html#work">Explore more work &#8599;</a></footer>
+    </main>
+  </body>
+</html>
