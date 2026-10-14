@@ -3,9 +3,9 @@
    Cursor artwork and colours are configured in style.css.
    ============================================================= */
 const settings = {
-  name: 'Your Name',
-  email: 'hello@example.com',
-  customCursorDefault: false, // true = on for first-time visitors
+  name: 'Thomas Gotch',
+  email: 'tcgotch@berkeley.edu',
+  customCursorDefault: true, // true = on for first-time visitors
   revealOnScroll: true,
 };
 
