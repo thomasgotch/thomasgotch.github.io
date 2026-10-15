@@ -777,8 +777,8 @@ dialog h2 {
     align-items:center;
     justify-content:space-between
   }
-.identity,.sidebar-bottom {
-    display:none
+  .identity,.sidebar-bottom {
+    display:block
   }
   nav {
     margin:0;
@@ -1000,3 +1000,58 @@ body::before {
 
 
 
+
+
+/* Responsive navigation: content is visible until navigation.js enhances it. */
+.sidebar { overflow-y: auto; overscroll-behavior: contain; }
+.sidebar-header { position: relative; flex-shrink: 0; height: var(--logo-size); }
+.sidebar-content { display: flex; flex-direction: column; flex: 1; min-height: min-content; }
+.sidebar-content[hidden], .navigation-toggle[hidden] { display: none; }
+.navigation-toggle, .mobile-project-link { display: none; }
+@media (max-width: 900px) {
+  html { scroll-padding-top: calc(var(--logo-size) + var(--logo-top) * 2 + 16px); }
+  .shell { display: block; }
+  .sidebar {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    height: auto;
+    max-height: 100vh;
+    max-height: 100dvh;
+    padding: var(--logo-top) var(--logo-left);
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+  .sidebar-header { height: var(--logo-size); }
+  .navigation-toggle {
+    position: absolute;
+    right: 0;
+    top: calc((var(--logo-size) - 44px) / 2);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    min-width: 90px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: var(--navy);
+    font-size: 11px;
+  }
+  .hamburger { display: flex; flex-direction: column; gap: 4px; width: 17px; }
+  .hamburger i { display: block; height: 1px; width: 17px; background: var(--accent); }
+  .navigation-toggle[aria-expanded='true'] .hamburger i:first-child { transform: translateY(5px) rotate(45deg); }
+  .navigation-toggle[aria-expanded='true'] .hamburger i:nth-child(2) { opacity: 0; }
+  .navigation-toggle[aria-expanded='true'] .hamburger i:last-child { transform: translateY(-5px) rotate(-45deg); }
+  .sidebar-content { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
+  .sidebar .identity { display: block; margin-top: 0; }
+  .sidebar nav { display: block; margin: 18px 0 26px; }
+  .sidebar nav a { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+  .sidebar nav a > span:last-child { display: inline; }
+  .sidebar .sidebar-bottom { display: block; margin-top: 0; padding-bottom: 8px; }
+  .sidebar-bottom p { margin: 16px 0; }
+}
