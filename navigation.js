@@ -52,4 +52,5 @@
   if (compact.addEventListener) compact.addEventListener('change', changeLayout);
   else compact.addListener(changeLayout);
   render();
+  document.documentElement.classList.add('navigation-ready');
 })();

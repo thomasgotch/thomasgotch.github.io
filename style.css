@@ -1013,7 +1013,7 @@ body::before {
   .shell { display: block; }
   .sidebar {
     display: block;
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 30;
     height: auto;
@@ -1026,6 +1026,7 @@ body::before {
     overflow-y: auto;
     scrollbar-gutter: stable;
   }
+  .navigation-ready .sidebar { position: sticky; }
   .sidebar-header { height: var(--logo-size); }
   .navigation-toggle {
     position: absolute;
