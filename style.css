@@ -10,8 +10,9 @@
   --muted:#a4b4b9;
   --accent:#96c8a2;
   --navy:#172b4d;
-  --cursor-default:url("assets/cursor.svg") 5 5, auto;
-  --cursor-pointer:url("assets/cursor-pointer.svg") 12 12, pointer;
+  --cursor-default:url("assets/rat.png") 5 5, auto;
+  /* --cursor-pointer:url("assets/rat.png"), pointer; */
+  --cursor-pointer:pointer;
   font-family:'DM Mono','Cascadia Code','Courier New',monospace;
   color:var(--text);
   background:var(--bg);

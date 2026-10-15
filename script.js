@@ -3,7 +3,7 @@
    Cursor artwork and colours are configured in style.css.
    ============================================================= */
 const settings = {
-  name: 'Thomas Gotch',
+  name: 'thomas gotch',
   email: 'tcgotch@berkeley.edu',
   customCursorDefault: true, // true = on for first-time visitors
   revealOnScroll: true,
@@ -46,7 +46,7 @@ document.querySelectorAll('[data-year]').forEach(element => {
   element.textContent = new Date().getFullYear();
 });
 document.querySelector('#email-link').href = 'mailto:' + settings.email;
-document.title = settings.name + ' - Designer & Developer';
+document.title = settings.name;
 
 /* Project filters. */
 const filters = document.querySelectorAll('[data-filter]');
@@ -91,9 +91,9 @@ document.querySelector('#copy-email').addEventListener('click', async event => {
   const button = event.currentTarget;
   try {
     await navigator.clipboard.writeText(settings.email);
-    button.textContent = 'Email copied';
-    document.querySelector('#copy-status').textContent = 'Email address copied';
-    setTimeout(() => { button.textContent = 'Copy email address'; }, 2500);
+    button.textContent = 'email copied';
+    document.querySelector('#copy-status').textContent = 'email copied';
+    setTimeout(() => { button.textContent = 'copy email'; }, 2500);
   } catch {
     button.textContent = settings.email;
     document.querySelector('#copy-status').textContent = 'Email address: ' + settings.email;
@@ -143,7 +143,7 @@ try {
 function updateCursor() {
   document.documentElement.dataset.customCursor = customCursor ? 'on' : 'off';
   cursorToggle.setAttribute('aria-pressed', String(customCursor));
-  cursorToggle.textContent = 'Custom cursor: ' + (customCursor ? 'on' : 'off');
+  cursorToggle.textContent = 'rat cursor: ' + (customCursor ? 'on' : 'off');
 }
 cursorToggle.addEventListener('click', () => {
   customCursor = !customCursor;
