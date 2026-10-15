@@ -9,16 +9,27 @@ const settings = {
   revealOnScroll: true,
 };
 
-/* EDIT: PROJECT NOTES - match IDs with data-project in index.html.
+/* EDIT: PROJECTS - match IDs with data-project in index.html.
+   image: upload a picture to assets/projects/ and enter its path below.
+   example: image: 'assets/projects/spapl.jpg'
+   leave image empty to keep the original artwork.
    demo is a relative link; replace it with your own project URL. */
 const projects = {
   spapl: {
+    image: '', // e.g. 'assets/projects/spapl.jpg'
+    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
+    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
+    showArtOverlay: false, // true keeps the original lettering and shapes over the image
     title: 'spAPL',
     category: '',
     summary: 'a music sourcing tool',
     idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)'
   },
   fieldnotes: {
+    image: '', // e.g. 'assets/projects/fieldnotes.jpg'
+    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
+    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
+    showArtOverlay: false, // true keeps the original lettering and shapes over the image
     title: 'Fieldnotes',
     category: 'DESIGN / EDITORIAL CONCEPT',
     summary: 'An editorial home for ideas worth keeping.',
@@ -27,6 +38,10 @@ const projects = {
     demo: 'projects/fieldnotes.html',
   },
   orbit: {
+    image: '', // e.g. 'assets/projects/orbit.jpg'
+    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
+    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
+    showArtOverlay: false, // true keeps the original lettering and shapes over the image
     title: 'Orbit',
     category: 'DEVELOPMENT / PRODUCT CONCEPT',
     summary: 'A quieter approach to getting things done.',
@@ -35,6 +50,10 @@ const projects = {
     demo: 'projects/orbit.html',
   },
   form: {
+    image: '', // e.g. 'assets/projects/form.jpg'
+    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
+    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
+    showArtOverlay: false, // true keeps the original lettering and shapes over the image
     title: 'Form & Function',
     category: 'DESIGN + DEVELOPMENT / SYSTEM CONCEPT',
     summary: 'A flexible foundation for cohesive digital products.',
@@ -43,6 +62,33 @@ const projects = {
     demo: 'projects/form.html',
   },
 };
+
+
+/* apply optional project images; original artwork stays visible until load succeeds */
+function applyProjectImages() {
+  document.querySelectorAll('[data-project]').forEach(card => {
+    const project = projects[card.dataset.project];
+    const art = card.querySelector('.art');
+    if (!art || !project || typeof project.image !== 'string' || !project.image.trim()) return;
+    const image = document.createElement('img');
+    image.className = 'project-background';
+    image.alt = ''; // decorative: the project title below names the card
+    image.decoding = 'async';
+    image.style.objectFit = project.imageFit === 'contain' ? 'contain' : 'cover';
+    image.style.objectPosition = project.imagePosition || 'center';
+    image.addEventListener('load', () => {
+      art.prepend(image);
+      art.classList.add('has-project-image');
+      art.classList.toggle('image-only', !project.showArtOverlay);
+    }, { once: true });
+    image.addEventListener('error', () => {
+      image.remove();
+      art.classList.remove('has-project-image', 'image-only');
+    }, { once: true });
+    image.src = project.image.trim();
+  });
+}
+applyProjectImages();
 
 /* PAGE SETUP - usually no editing needed below this line. */
 document.querySelectorAll('[data-name]').forEach(element => {
