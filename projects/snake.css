@@ -4,7 +4,7 @@
   --accent: #96c8a2;
   --lcd: #a7bd83;
   --ink: #233c23;
-  --cursor-default:url("assets/rat.png") 5 5, auto;
+  --cursor-default:url("../assets/rat.png") 5 5, auto;
   /* --cursor-pointer:url("assets/rat.png"), pointer; */
   --cursor-pointer:pointer;
   font-family: 'Cascadia Code', 'Courier New', monospace;
