@@ -26,6 +26,30 @@ const projects = {
     idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
     approach: 'i used python and ytdlp',
   },
+  horsepower: {
+    image: '',
+    imagePosition: '',
+    imageFit: 'cover', 
+    showArtOverlay: false,
+    title: 'horsepower.vip',
+    category: '',
+    summary: '',
+    idea: '',
+    approach: '',
+    demo: '',
+  },
+  gotch_music_co: {
+    image: '',
+    imagePosition: '',
+    imageFit: 'cover', 
+    showArtOverlay: false,
+    title: 'horsepower.vip',
+    category: '',
+    summary: '',
+    idea: '',
+    approach: '',
+    demo: '',
+  },
   fieldnotes: {
     image: '', // e.g. 'assets/projects/fieldnotes.jpg'
     imagePosition: 'center', // e.g. 'center top' or '50% 30%'
