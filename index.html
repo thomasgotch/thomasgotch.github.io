@@ -9,25 +9,12 @@
     <title>thomas gotch - portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/brand.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
     <script src="navigation.js" defer></script>
     <script src="script.js" defer>
     </script>
   </head>
-  <!-- EDITING MAP
-  01 - Page title, description, and fonts: <head> above.
-  02 - Your name, email, and default cursor: SETTINGS in script.js.
-  03 - Logo initials, short bio, and availability: SIDEBAR.
-  04 - Intro headline and description: HERO.
-  05 - Project names, images/artwork, and demo links: PROJECTS.
-       Extended case-study text and demo URLs also live in script.js.
-  06 - Biography and skills: ABOUT.
-  07 - Contact copy: CONTACT. Email comes from script.js.
-  08 - Colours and cursor artwork: SETTINGS at the top of style.css.
-  Search for EDIT: to jump between editable sections.
--->
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <!-- <a class="skip" href="#main">Skip to content</a> -->
     <div class="shell">
       <!-- EDIT: SIDEBAR - initials, short bio, availability. -->
       <aside class="sidebar">
@@ -40,7 +27,6 @@
         </div>
         <div id="sidebar-content" class="sidebar-content">
         <div class="identity">
-          <!-- <span class="eyebrow">about me</span> -->
           <h2 data-name>thomas gotch</h2>
           <p>
             hungry in every sense
@@ -86,6 +72,9 @@
             </a>
           </span>
         </header>
+
+
+
         <!-- EDIT: HERO - your introduction. -->
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero-label">
@@ -108,6 +97,9 @@
             </a>
           </div>
         </section>
+
+
+
         <!-- EDIT: PROJECTS - one article per project. Keep data-project IDs in sync with script.js. -->
         <section id="work" aria-labelledby="work-title">
           <div class="section-heading">
@@ -141,10 +133,6 @@
                     <br>
                     stored <i>locally</i>
                   </div>
-                  <!-- <div class="paper p1">
-                  </div>
-                  <div class="paper p2">
-                  </div> -->
                   <div class="quaver">
                   </div>
                 </div>
@@ -160,11 +148,9 @@
                   <span class="project-year">2024</span>
                 </div>
               </button>
-              <!-- <a class="demo-link" href="projects/fieldnotes.html">
-                Visit example site
-                <span aria-hidden="true">&#8599;</span>
-              </a> -->
             </article>
+
+
 
             <!-- EDIT: FIELDNOTES - card content and demo URL. -->
             <!-- <article class="project featured" data-project="fieldnotes" data-category="technical">
@@ -210,8 +196,9 @@
             </article> -->
 
 
+
             <!-- EDIT: ORBIT - card content and demo URL. -->
-            <article class="project" data-project="orbit" data-category="social">
+            <!-- <article class="project" data-project="orbit" data-category="social">
               <button class="project-open" data-open="orbit" aria-haspopup="dialog">
                 <div class="art orbit">
                   <div class="orbit-head">
@@ -252,7 +239,9 @@
                 Visit example site
                 <span aria-hidden="true">&#8599;</span>
               </a>
-            </article>
+            </article> -->
+
+
 
             <!-- EDIT: FORM - card content and demo URL. -->
             <article class="project wide" data-project="form" data-category="technical musical social">
@@ -304,6 +293,9 @@
             </article>
           </div>
         </section>
+
+
+
         <!-- EDIT: ABOUT - biography and skills. -->
         <section id="about" class="about" aria-labelledby="about-title">
           <div class="section-heading">
@@ -311,7 +303,6 @@
               <span class="section-number">02</span>
               a little about me
             </h2>
-            <!-- <span class="small muted">THE PERSON BEHIND THE PIXELS</span> -->
           </div>
           <div class="about-grid">
             <div>
@@ -353,6 +344,9 @@
             </div> -->
           </div>
         </section>
+
+
+
         <!-- EDIT: CONTACT - invitation and email button label. -->
         <section id="contact" class="contact" aria-labelledby="contact-title">
           <div class="section-heading">
@@ -360,7 +354,6 @@
               <span class="section-number">03</span>
               contact details
             </h2>
-            <!-- <span class="small muted">GOOD THINGS START WITH A HELLO</span> -->
           </div>
           <div class="contact-main">
             <h3>
@@ -373,6 +366,8 @@
                 feel free to reach out for anything and everything
                 <br>
                 i will do my best to respond asap
+                <br>
+                you can also reach me on <a style="text-decoration: underline", href="https://linkedin.com/in/thomasgotch">linkedin</a>
               </p>
               <a class="contact-button" id="email-link" href="mailto:hello@example.com">
                 say hello
@@ -387,18 +382,19 @@
             </div>
           </div>
         </section>
+
+
+
         <!-- FOOTER - optional custom cursor; preference is saved on this device. -->
         <footer>
-          <!-- <span>
-            &copy;
-            <span data-year>2026</span>
-            <span data-name>thomas gotch</span>
-          </span> -->
-          <button class="cursor-toggle" id="cursor-toggle" type="button" aria-pressed="false">Custom cursor: off</button>
+          <button class="cursor-toggle" id="cursor-toggle" type="button" aria-pressed="true"></button>
           <a href="#home">back to top &#8593;</a>
         </footer>
       </main>
     </div>
+
+
+
     <!-- PROJECT NOTES DIALOG - populated from the projects object in script.js. -->
     <dialog id="project-dialog" aria-labelledby="dialog-title">
       <div class="dialog-top">
@@ -421,16 +417,12 @@
         <p id="dialog-approach">
         </p>
       </div>
-      <div class="dialog-section">
-        <h3>Make it yours</h3>
-        <p>Replace this sample with your process, your role, the decisions you made, and what you learned. The example link below opens a working concept site. Replace it with your own live project when ready.</p>
-      </div>
       <a class="contact-button" id="dialog-demo" href="projects/fieldnotes.html">
-        Visit example site
+        visit example site
         <span aria-hidden="true">&#8599;</span>
       </a>
       <a class="text-link" href="#contact" id="dialog-contact">
-        Talk about a project
+        discuss this with me
         <span>&#8599;</span>
       </a>
     </dialog>

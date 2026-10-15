@@ -16,14 +16,15 @@ const settings = {
    demo is a relative link; replace it with your own project URL. */
 const projects = {
   spapl: {
-    image: '', // e.g. 'assets/projects/spapl.jpg'
-    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
+    image: 'assets/projects/quaver.svg', // e.g. 'assets/projects/spapl.jpg'
+    imagePosition: 'right', // e.g. 'center top' or '50% 30%'
     imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
     showArtOverlay: false, // true keeps the original lettering and shapes over the image
     title: 'spAPL',
     category: '',
     summary: 'a music sourcing tool',
-    idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)'
+    idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
+    approach: 'i used python and ytdlp',
   },
   fieldnotes: {
     image: '', // e.g. 'assets/projects/fieldnotes.jpg'
@@ -195,7 +196,7 @@ try {
 function updateCursor() {
   document.documentElement.dataset.customCursor = customCursor ? 'on' : 'off';
   cursorToggle.setAttribute('aria-pressed', String(customCursor));
-  cursorToggle.textContent = 'rat cursor: ' + (customCursor ? 'on' : 'off');
+  cursorToggle.textContent = 'rat cursor: ' + (customCursor ? 'on' : 'off') + ' (desktop only)';
 }
 cursorToggle.addEventListener('click', () => {
   customCursor = !customCursor;
