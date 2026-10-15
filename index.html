@@ -125,11 +125,49 @@
               <button data-filter="social" aria-pressed="false">social</button>
               <button data-filter="musical" aria-pressed="false">musical</button>
             </div>
-            <!-- <span class="small muted">&#8595; CLICK TO EXPLORE</span> -->
           </div>
           <div class="project-grid">
+
+            <article class="project featured" data-project="spapl" data-category="technical musical">
+              <button class="project-open" data-open="spapl" aria-haspopup="dialog">
+                <div class="art spapl">
+                  <span class="art-top">
+                    spAPL
+                  </span>
+                  <div class="field-title">
+                    all your
+                    <br>
+                    playlists
+                    <br>
+                    stored <i>locally</i>
+                  </div>
+                  <!-- <div class="paper p1">
+                  </div>
+                  <div class="paper p2">
+                  </div> -->
+                  <div class="quaver">
+                  </div>
+                </div>
+                <div class="project-meta">
+                  <div>
+                    <span class="small muted">technical &middot; musical</span>
+                    <h3>
+                      spAPL
+                      <span>&#8599;</span>
+                    </h3>
+                    <p>a music sourcing tool</p>
+                  </div>
+                  <span class="project-year">2024</span>
+                </div>
+              </button>
+              <!-- <a class="demo-link" href="projects/fieldnotes.html">
+                Visit example site
+                <span aria-hidden="true">&#8599;</span>
+              </a> -->
+            </article>
+
             <!-- EDIT: FIELDNOTES - card content and demo URL. -->
-            <article class="project featured" data-project="fieldnotes" data-category="technical">
+            <!-- <article class="project featured" data-project="fieldnotes" data-category="technical">
               <button class="project-open" data-open="fieldnotes" aria-haspopup="dialog">
                 <div class="art fieldnotes">
                   <span class="art-top">
@@ -169,7 +207,9 @@
                 Visit example site
                 <span aria-hidden="true">&#8599;</span>
               </a>
-            </article>
+            </article> -->
+
+
             <!-- EDIT: ORBIT - card content and demo URL. -->
             <article class="project" data-project="orbit" data-category="social">
               <button class="project-open" data-open="orbit" aria-haspopup="dialog">
@@ -207,7 +247,6 @@
                   </div>
                   <span class="project-year">2026</span>
                 </div>
-                <span class="project-action">Read project notes &#8599;</span>
               </button>
               <a class="demo-link" href="projects/orbit.html">
                 Visit example site
@@ -257,7 +296,6 @@
                   </div>
                   <span class="project-year">2025</span>
                 </div>
-                <span class="project-action">Read project notes &#8599;</span>
               </button>
               <a class="demo-link" href="projects/form.html">
                 Visit example site
@@ -265,7 +303,6 @@
               </a>
             </article>
           </div>
-          <p class="template-note">&#8627; Concept projects with working example sites. Replace these with your own stories.</p>
         </section>
         <!-- EDIT: ABOUT - biography and skills. -->
         <section id="about" class="about" aria-labelledby="about-title">
@@ -365,8 +402,8 @@
     <!-- PROJECT NOTES DIALOG - populated from the projects object in script.js. -->
     <dialog id="project-dialog" aria-labelledby="dialog-title">
       <div class="dialog-top">
-        <span class="eyebrow">PROJECT NOTES / TEMPLATE</span>
-        <button id="close-dialog" aria-label="Close project details">Close &times;</button>
+        <span class="eyebrow">project notes</span>
+        <button id="close-dialog" aria-label="Close project details">close &times;</button>
       </div>
       <span id="dialog-category" class="small muted">
       </span>
@@ -375,12 +412,12 @@
       <p id="dialog-summary" class="dialog-summary">
       </p>
       <div class="dialog-section">
-        <h3>The idea</h3>
+        <h3>the idea</h3>
         <p id="dialog-idea">
         </p>
       </div>
       <div class="dialog-section">
-        <h3>The approach</h3>
+        <h3>the approach</h3>
         <p id="dialog-approach">
         </p>
       </div>

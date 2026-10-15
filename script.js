@@ -12,6 +12,12 @@ const settings = {
 /* EDIT: PROJECT NOTES - match IDs with data-project in index.html.
    demo is a relative link; replace it with your own project URL. */
 const projects = {
+  spapl: {
+    title: 'spAPL',
+    category: '',
+    summary: 'a music sourcing tool',
+    idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)'
+  },
   fieldnotes: {
     title: 'Fieldnotes',
     category: 'DESIGN / EDITORIAL CONCEPT',

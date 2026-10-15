@@ -276,7 +276,7 @@ sup {
   transform:translate(3px,-3px);
   color:var(--accent)
 }
-.fieldnotes {
+.spapl {
   background:#a8c9b2;
   color:#172b38;
   padding:23px
@@ -333,6 +333,16 @@ sup {
   transform:rotate(13deg);
   background:#7fa890;
   opacity:.75
+}
+.quaver {
+  position:absolute;
+  width:160px;
+  height:200px;
+  background:#dce9df;
+  right:-25px;
+  top:90px;
+  transform:rotate(-16deg);
+  box-shadow:-5px 8px 20px #29302924
 }
 .art-foot {
   bottom:21px;
@@ -513,11 +523,6 @@ sup {
   color:#253e4c;
   text-align:center;
   padding:0
-}
-.template-note {
-  font-size:9px;
-  color:var(--muted);
-  margin:23px 0 0
 }
 .about {
   margin-top:62px
