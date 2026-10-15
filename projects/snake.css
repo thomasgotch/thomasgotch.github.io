@@ -89,3 +89,9 @@ button:disabled { opacity: .35; cursor: default; }
 }
 
 
+
+/* same cursor behavior as the home page, with the local rat asset path above */
+@media (hover: hover) and (pointer: fine) {
+  html[data-custom-cursor="on"] body { cursor: var(--cursor-default); }
+  html[data-custom-cursor="on"] :is(a, button, summary) { cursor: var(--cursor-pointer); }
+}

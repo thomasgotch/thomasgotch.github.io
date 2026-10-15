@@ -43,7 +43,10 @@ const SnakeCore = (() => {
 
 // Export the pure rules for verification. The game also runs directly in a browser.
 if (typeof module !== 'undefined' && module.exports) module.exports = SnakeCore;
-if (typeof document !== 'undefined') initializeSnake();
+if (typeof document !== 'undefined') {
+  initializeCustomCursor();
+  initializeSnake();
+}
 
 function initializeSnake() {
   const canvas = document.querySelector('#board');
@@ -190,3 +193,21 @@ function initializeSnake() {
   render();
 }
 
+
+/* use the home page's saved cursor preference on this project page */
+function initializeCustomCursor() {
+  const key = 'mono-custom-cursor';
+  function syncCursor() {
+    let enabled = true;
+    try {
+      const saved = localStorage.getItem(key);
+      if (saved !== null) enabled = saved === 'on';
+    } catch { /* the home page also defaults to the custom cursor */ }
+    document.documentElement.dataset.customCursor = enabled ? 'on' : 'off';
+  }
+  syncCursor();
+  window.addEventListener('pageshow', syncCursor);
+  window.addEventListener('storage', event => {
+    if (event.key === key || event.key === null) syncCursor();
+  });
+}
