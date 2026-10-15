@@ -1,7 +1,6 @@
 /* EDIT: THEME AND CURSOR SETTINGS - the :root block below.
    Eton Blue: #96c8a2. Supporting navy: #172b4d.
    Cursor paths are relative to this stylesheet; hotspot numbers are x/y pixels. */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
 :root {
   --bg:#10171e;
   --panel:#17212c;
@@ -51,7 +50,7 @@ button:focus-visible,a:focus-visible {
   color:var(--bg)
 }
 .shell {
-  max-width:1600px;
+  max-width:var(--site-width);
   margin:auto;
   display:grid;
   grid-template-columns:250px minmax(0,1fr)
@@ -61,18 +60,9 @@ button:focus-visible,a:focus-visible {
   position:sticky;
   top:0;
   border-right:1px solid var(--line);
-  padding:40px 30px;
+  padding:var(--logo-top) var(--logo-left);
   display:flex;
   flex-direction:column
-}
-.wordmark {
-  font-size:37px;
-  letter-spacing:-5px;
-  font-weight:500;
-  line-height:1
-}
-.wordmark span {
-  color:var(--accent)
 }
 .identity {
   margin-top:72px
@@ -727,7 +717,7 @@ dialog h2 {
     grid-template-columns:205px minmax(0,1fr)
   }
   .sidebar {
-    padding:33px 24px
+    padding:var(--logo-top) var(--logo-left)
   }
   main {
     padding:0 30px
@@ -781,16 +771,13 @@ dialog h2 {
     position:static;
     border-right:0;
     border-bottom:1px solid var(--line);
-    padding:22px;
+    padding:var(--logo-top) var(--logo-left);
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:space-between
   }
-  .wordmark {
-    font-size:30px
-  }
-  .identity,.sidebar-bottom {
+.identity,.sidebar-bottom {
     display:none
   }
   nav {
@@ -1010,4 +997,6 @@ body::before {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
 }
+
+
 

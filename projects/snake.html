@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10171e">
+    <meta name="description" content="a simple snake game.">
+    <title>snake</title>
+    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="../assets/brand.css">
+    <script src="snake.js" defer></script>
+  </head>
+  <body>
+    <!-- edit: initials and home link, for a game in the projects folder. -->
+    <a class="wordmark brand-home" href="../index.html" aria-label="home">tg<span aria-hidden="true">_</span></a>
+    <main class="game" aria-label="snake game">
+      <header class="game-header">
+        <h1>snake</h1>
+        <div class="scores">
+          <span>score <output id="score">0000</output></span>
+          <span>best <output id="best">0000</output></span>
+        </div>
+      </header>
+
+      <div class="board-wrap">
+        <canvas id="board" width="400" height="400" tabindex="0" role="img"
+          aria-label="snake playing field" aria-describedby="game-status"></canvas>
+        <div class="screen-message" id="screen-message">
+          <strong id="message-title">snake</strong>
+          <button id="screen-start" type="button">play</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="pause-button" type="button" disabled>pause</button>
+        <button id="restart-button" type="button">restart</button>
+      </div>
+
+      <div class="dpad" role="group" aria-label="direction controls">
+        <button class="up" data-direction="up" aria-label="up">&#9650;</button>
+        <button class="left" data-direction="left" aria-label="left">&#9664;</button>
+        <button class="right" data-direction="right" aria-label="right">&#9654;</button>
+        <button class="down" data-direction="down" aria-label="down">&#9660;</button>
+      </div>
+      <p id="game-status" class="sr-only" role="status" aria-live="polite">ready</p>
+    </main>
+  </body>
+</html>
+
+
