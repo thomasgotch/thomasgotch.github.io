@@ -62,14 +62,14 @@ const projects = {
     approach: 'A restrained palette, editorial typography, and a clear reading hierarchy. The example site includes three short essays to explore.',
     demo: 'projects/fieldnotes.html',
   },
-  orbit: {
+  ibm_quantum: {
     image: '', // e.g. 'assets/projects/orbit.jpg'
     imagePosition: 'center', // e.g. 'center top' or '50% 30%'
     imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
     showArtOverlay: false, // true keeps the original lettering and shapes over the image
-    title: 'Orbit',
-    category: 'DEVELOPMENT / PRODUCT CONCEPT',
-    summary: 'A quieter approach to getting things done.',
+    title: 'ibm quantum hackathon',
+    category: '',
+    summary: "ibm's qiskit fall fest 2026",
     idea: 'A focus tool built around one small promise: make it easier to give your attention to the task in front of you.',
     approach: 'A focused interface, clear states, and subtle visual feedback. The example includes a working focus timer and a small task list.',
     demo: 'projects/orbit.html',

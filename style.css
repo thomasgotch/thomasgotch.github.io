@@ -348,66 +348,19 @@ sup {
   bottom:21px;
   font-size:7px
 }
-.orbit {
+.ibm_quantum {
   background:#172b4d;
   color:#b7d5c4;
   padding:23px
 }
-.orbit-head {
+.ibm_quantum-head {
   display:flex;
   justify-content:space-between;
   font-size:9px;
   letter-spacing:1px
 }
-.orbit-head span:last-child {
+.ibm_quantum-head span:last-child {
   font-size:6px
-}
-.orbital {
-  position:absolute;
-  width:190px;
-  height:190px;
-  border:1px solid #69627f69;
-  border-radius:50%;
-  left:50%;
-  top:52%;
-  transform:translate(-50%,-50%)
-}
-.ring-two {
-  width:245px;
-  height:245px
-}
-.ring-three {
-  width:300px;
-  height:300px
-}
-.orbit-center {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  font-size:42px;
-  letter-spacing:-3px;
-  white-space:nowrap
-}
-.orbit-center>span {
-  color:#73958f
-}
-.orbit-center small {
-  display:block;
-  font-size:6px;
-  letter-spacing:1px;
-  text-align:center;
-  margin-top:12px
-}
-.orbit-dot {
-  position:absolute;
-  width:10px;
-  height:10px;
-  background:#96c8a2;
-  border-radius:50%;
-  top:80px;
-  left:calc(50% + 102px);
-  box-shadow:0 0 20px #c6a6ff44
 }
 .project-meta {
   padding:17px 0 0;
