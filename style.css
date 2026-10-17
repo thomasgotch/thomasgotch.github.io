@@ -9,14 +9,15 @@
   --muted:#a4b4b9;
   --accent:#96c8a2;
   --navy:#172b4d;
+  --dark-card:#14263c;
   --cursor-default:url("assets/rat.png") 5 5, auto;
   --cursor-pointer:pointer;
+  
+  --title-size:52px;
   font-family:'DM Mono','Cascadia Code','Courier New',monospace;
   color:var(--text);
   background:var(--bg);
   font-synthesis:none;
-
-  --title-size:31px;
 }
 * {
   box-sizing:border-box
@@ -277,10 +278,14 @@ sup {
   transform:translate(3px,-3px);
   color:var(--accent)
 }
-.spapl {
-  background:#a8c9b2;
-  color:#172b38;
+.card {
+  background:var(--accent);
+  color:var(--navy);
   padding:23px
+}
+.dark-card {
+  background:var(--dark-card);
+  padding:23px;
 }
 .art-top,.art-foot {
   position:absolute;
@@ -300,35 +305,21 @@ sup {
   font-size:6px;
   letter-spacing:.5px
 }
-.spapl-title {
+.card-title {
   font-family:Georgia,serif;
-  font-size:52px;
+  font-size:var(--title-size);
   line-height:.95;
   position:relative;
   z-index:2;
   letter-spacing:-2px;
   margin-top:41px
 }
-.spapl-title i {
+.card-title i {
   font-weight:400
 }
 .art-foot {
   bottom:21px;
   font-size:7px
-}
-.ibm_quantum {
-  background:#172b4d;
-  color:#b7d5c4;
-  padding:23px
-}
-.ibm_quantum-head {
-  display:flex;
-  justify-content:space-between;
-  font-size:9px;
-  letter-spacing:1px
-}
-.ibm_quantum-head span:last-child {
-  font-size:6px
 }
 .project-meta {
   padding:17px 0 0;
@@ -361,28 +352,23 @@ sup {
   color:var(--muted);
   padding-top:3px
 }
-.musical_studies {
+.card-wide {
   height:270px;
-  background:#14263c;
+  background:var(--dark-card);
   display:flex;
-  align-items:center;
   justify-content:space-between;
   padding:35px;
-  gap:30px
-}
-.musical_studies-copy {
-  display:flex;
+  gap:25;
   flex-direction:column;
-  gap:25px;
   position:relative;
-  z-index:2
+  z-index: 2;
 }
-.musical_studies-copy>.small {
+.card-wide>.small {
   font-size:7px;
   letter-spacing:1.5px;
   color:#a9c3be
 }
-.musical_studies-copy strong {
+.card-wide strong {
   font-weight:400;
   font-size:var(--title-size);
   letter-spacing:-1px;
