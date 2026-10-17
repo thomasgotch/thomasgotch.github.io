@@ -16,15 +16,17 @@ const settings = {
    demo is a relative link; replace it with your own project URL. */
 const projects = {
   spapl: {
-    image: 'assets/projects/quaver.svg', // e.g. 'assets/projects/spapl.jpg'
-    imagePosition: 'right', // e.g. 'center top' or '50% 30%'
-    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
-    showArtOverlay: false, // true keeps the original lettering and shapes over the image
+    // image: 'assets/projects/quaver.svg', // e.g. 'assets/projects/spapl.jpg'
+    image: '',
+    imagePosition: 'bottom', // e.g. 'center top' or '50% 30%'
+    imageFit: 'contain', // 'cover' crops to fill; 'contain' shows the whole image
+    showArtOverlay: true, // true keeps the original lettering and shapes over the image
     title: 'spAPL',
     category: '',
     summary: 'a music sourcing tool',
     idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
-    approach: 'i used python and ytdlp',
+    approach: 'i taught myself ',
+    demo: 'projects/spapl.html',
   },
   horsepower: {
     image: '',
@@ -74,7 +76,7 @@ const projects = {
     approach: 'A focused interface, clear states, and subtle visual feedback. The example includes a working focus timer and a small task list.',
     demo: 'projects/orbit.html',
   },
-  form: {
+  musical_studies: {
     image: '', // e.g. 'assets/projects/form.jpg'
     imagePosition: 'center', // e.g. 'center top' or '50% 30%'
     imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
