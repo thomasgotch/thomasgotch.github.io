@@ -1,11 +1,7 @@
-/* =============================================================
-   EDIT: SETTINGS - start here to personalize your portfolio.
-   Cursor artwork and colours are configured in style.css.
-   ============================================================= */
 const settings = {
   name: 'thomas gotch',
   email: 'tcgotch@berkeley.edu',
-  customCursorDefault: true, // true = on for first-time visitors
+  customCursorDefault: true,
   revealOnScroll: true,
 };
 
@@ -40,23 +36,11 @@ const projects = {
     approach: '',
     demo: 'https://www.instagram.com/horsepower.vip/',
   },
-  gotch_music_co: {
-    image: '',
-    imagePosition: '',
-    imageFit: 'cover', 
-    showArtOverlay: false,
-    title: 'horsepower.vip',
-    category: '',
-    summary: '',
-    idea: '',
-    approach: '',
-    demo: '',
-  },
   ibm_quantum: {
-    image: '', // e.g. 'assets/projects/orbit.jpg'
+    image: '',
     imagePosition: 'center', // e.g. 'center top' or '50% 30%'
     imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
-    showArtOverlay: false, // true keeps the original lettering and shapes over the image
+    showArtOverlay: false,
     title: 'ibm quantum hackathon',
     category: '',
     summary: "ibm's qiskit fall fest 2026",
@@ -65,16 +49,16 @@ const projects = {
     demo: '',
   },
   musical_studies: {
-    image: '', // e.g. 'assets/projects/form.jpg'
-    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
-    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
-    showArtOverlay: false, // true keeps the original lettering and shapes over the image
+    image: '',
+    imagePosition: 'center',
+    imageFit: 'cover',
+    showArtOverlay: false,
     title: 'musical studies',
     category: '',
-    summary: 'my journey and experiences with music throughout my life',
+    summary: 'my journey and experiences with music',
     idea: '',
     approach: '',
-    demo: 'projects/form.html',
+    demo: '',
   },
   rowing: {
     image: '',

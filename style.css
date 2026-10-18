@@ -281,11 +281,11 @@ sup {
 .card {
   background:var(--accent);
   color:var(--navy);
-  padding:23px
+  padding:35px
 }
 .dark-card {
   background:var(--dark-card);
-  padding:23px;
+  padding:35px;
 }
 .art-top,.art-foot {
   position:absolute;
