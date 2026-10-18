@@ -59,7 +59,8 @@ const projects = {
     idea: '',
     approach: '',
     demo: '',
-    beginning: 'hi',
+    beginning: "most people ask whether my parents were musicians; the answer is no.\
+    they had both had",
   },
   rowing: {
     image: '',
