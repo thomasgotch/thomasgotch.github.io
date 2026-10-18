@@ -373,14 +373,25 @@
       </h2>
       <p id="dialog-summary" class="dialog-summary">
       </p>
-      <div class="dialog-section">
+      <!-- optional dialog sections
+           each section reads the project field named by data-project-section.
+           empty, missing, or whitespace-only values hide the heading and content.
+           to add a heading, copy this block before the visit-site button:
+           <div class="dialog-section" data-project-section="results">
+             <h3>results</h3>
+             <p data-section-content></p>
+           </div>
+           then add results: 'your results text' to a project in script.js.
+           choose a unique field name for each heading; no javascript changes needed.
+      -->
+      <div class="dialog-section" data-project-section="idea">
         <h3>the idea</h3>
-        <p id="dialog-idea">
+        <p id="dialog-idea" data-section-content>
         </p>
       </div>
-      <div class="dialog-section">
+      <div class="dialog-section" data-project-section="approach">
         <h3>the approach</h3>
-        <p id="dialog-approach">
+        <p id="dialog-approach" data-section-content>
         </p>
       </div>
       <a class="contact-button" id="dialog-demo" href="projects/fieldnotes.html">

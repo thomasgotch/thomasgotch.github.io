@@ -144,8 +144,15 @@ const dialog = document.querySelector('#project-dialog');
 document.querySelectorAll('[data-open]').forEach(button => {
   button.addEventListener('click', () => {
     const project = projects[button.dataset.open];
-    ['title', 'category', 'summary', 'idea', 'approach'].forEach(key => {
-      document.querySelector('#dialog-' + key).textContent = project[key];
+    ['title', 'category', 'summary'].forEach(key => {
+      document.querySelector('#dialog-' + key).textContent = project[key] || '';
+    });
+    // add sections in index.html using data-project-section="yourProjectField".
+    dialog.querySelectorAll('[data-project-section]').forEach(section => {
+      const value = project[section.dataset.projectSection];
+      const content = typeof value === 'string' ? value.trim() : '';
+      section.querySelector('[data-section-content]').textContent = content;
+      section.style.display = content ? '' : 'none';
     });
     const demoLink = document.querySelector('#dialog-demo');
     const demo = typeof project.demo === 'string' ? project.demo.trim() : '';
