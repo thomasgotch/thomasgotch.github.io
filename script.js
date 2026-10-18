@@ -163,7 +163,12 @@ document.querySelectorAll('[data-open]').forEach(button => {
     ['title', 'category', 'summary', 'idea', 'approach'].forEach(key => {
       document.querySelector('#dialog-' + key).textContent = project[key];
     });
-    document.querySelector('#dialog-demo').href = project.demo;
+    const demoLink = document.querySelector('#dialog-demo');
+    const demo = typeof project.demo === 'string' ? project.demo.trim() : '';
+    // display:none also overrides the button's display:flex styling.
+    demoLink.style.display = demo ? '' : 'none';
+    if (demo) demoLink.href = demo;
+    else demoLink.removeAttribute('href');
     dialog.showModal();
   });
 });
