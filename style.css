@@ -921,3 +921,9 @@ body::before {
   pointer-events: none;
 }
 .art.image-only > :not(.project-background) { display: none; }
+
+/* preserve \n or multiline template strings in project popup descriptions */
+.dialog-summary,
+.dialog-section [data-section-content] {
+  white-space: pre-line;
+}
