@@ -38,7 +38,7 @@ const projects = {
     summary: '',
     idea: '',
     approach: '',
-    demo: '',
+    demo: 'https://www.instagram.com/horsepower.vip/',
   },
   gotch_music_co: {
     image: '',
@@ -62,7 +62,7 @@ const projects = {
     summary: "ibm's qiskit fall fest 2026",
     idea: '',
     approach: '',
-    demo: 'projects/orbit.html',
+    demo: '',
   },
   musical_studies: {
     image: '', // e.g. 'assets/projects/form.jpg'
