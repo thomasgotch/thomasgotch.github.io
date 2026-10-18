@@ -59,6 +59,7 @@ const projects = {
     idea: '',
     approach: '',
     demo: '',
+    beginning: 'hi',
   },
   rowing: {
     image: '',
@@ -113,7 +114,6 @@ function applyProjectImages() {
 }
 applyProjectImages();
 
-/* PAGE SETUP - usually no editing needed below this line. */
 document.querySelectorAll('[data-name]').forEach(element => {
   element.textContent = settings.name;
 });
@@ -123,7 +123,7 @@ document.querySelectorAll('[data-year]').forEach(element => {
 document.querySelector('#email-link').href = 'mailto:' + settings.email;
 document.title = settings.name;
 
-/* Project filters. */
+/* project filters */
 const filters = document.querySelectorAll('[data-filter]');
 filters.forEach(button => {
   button.addEventListener('click', () => {
@@ -139,7 +139,7 @@ filters.forEach(button => {
   });
 });
 
-/* Project notes: native dialogs support Escape and keyboard focus. */
+/* project notes: native dialogs support esc and keyboard focus */
 const dialog = document.querySelector('#project-dialog');
 document.querySelectorAll('[data-open]').forEach(button => {
   button.addEventListener('click', () => {
