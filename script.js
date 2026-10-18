@@ -52,18 +52,6 @@ const projects = {
     approach: '',
     demo: '',
   },
-  fieldnotes: {
-    image: '', // e.g. 'assets/projects/fieldnotes.jpg'
-    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
-    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
-    showArtOverlay: false, // true keeps the original lettering and shapes over the image
-    title: 'Fieldnotes',
-    category: 'DESIGN / EDITORIAL CONCEPT',
-    summary: 'An editorial home for ideas worth keeping.',
-    idea: 'An independent journal that gives stories, observations, and everyday discoveries room to breathe.',
-    approach: 'A restrained palette, editorial typography, and a clear reading hierarchy. The example site includes three short essays to explore.',
-    demo: 'projects/fieldnotes.html',
-  },
   ibm_quantum: {
     image: '', // e.g. 'assets/projects/orbit.jpg'
     imagePosition: 'center', // e.g. 'center top' or '50% 30%'
@@ -72,8 +60,8 @@ const projects = {
     title: 'ibm quantum hackathon',
     category: '',
     summary: "ibm's qiskit fall fest 2026",
-    idea: 'A focus tool built around one small promise: make it easier to give your attention to the task in front of you.',
-    approach: 'A focused interface, clear states, and subtle visual feedback. The example includes a working focus timer and a small task list.',
+    idea: '',
+    approach: '',
     demo: 'projects/orbit.html',
   },
   musical_studies: {
@@ -81,13 +69,37 @@ const projects = {
     imagePosition: 'center', // e.g. 'center top' or '50% 30%'
     imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
     showArtOverlay: false, // true keeps the original lettering and shapes over the image
-    title: 'Form & Function',
-    category: 'DESIGN + DEVELOPMENT / SYSTEM CONCEPT',
-    summary: 'A flexible foundation for cohesive digital products.',
-    idea: 'A component system exploring the relationship between consistent visual language and reusable code.',
-    approach: 'Start with typography, spacing, and colour, then build accessible components that work together. Try the example playground to change theme, spacing, and component states.',
+    title: 'musical studies',
+    category: '',
+    summary: 'my journey and experiences with music throughout my life',
+    idea: '',
+    approach: '',
     demo: 'projects/form.html',
   },
+  rowing: {
+    image: '',
+    imagePosition: '',
+    imageFit: 'cover', 
+    showArtOverlay: false,
+    title: 'rowing',
+    category: '',
+    summary: "how i've been involved in the world of rowing",
+    idea: '',
+    approach: '',
+    demo: '',
+  },
+  blank: {
+    image: '',
+    imagePosition: '',
+    imageFit: 'cover', 
+    showArtOverlay: false,
+    title: '',
+    category: '',
+    summary: '',
+    idea: '',
+    approach: '',
+    demo: '',
+  }
 };
 
 
