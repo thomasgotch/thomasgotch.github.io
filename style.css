@@ -1,6 +1,3 @@
-/* EDIT: THEME AND CURSOR SETTINGS - the :root block below.
-   Eton Blue: #96c8a2. Supporting navy: #172b4d.
-   Cursor paths are relative to this stylesheet; hotspot numbers are x/y pixels. */
 :root {
   --bg:#10171e;
   --panel:#17212c;

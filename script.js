@@ -5,11 +5,6 @@ const settings = {
   revealOnScroll: true,
 };
 
-/* EDIT: PROJECTS - match IDs with data-project in index.html.
-   image: upload a picture to assets/projects/ and enter its path below.
-   example: image: 'assets/projects/spapl.jpg'
-   leave image empty to keep the original artwork.
-   demo is a relative link; replace it with your own project URL. */
 const projects = {
   volunteering: {
     image: '',
@@ -20,7 +15,7 @@ const projects = {
     category: '',
     summary: 'my way to show gratitude for my opportunities',
     idea: '',
-    approach: '',
+    approach: 'coming soon',
     demo: '',
   },
   stealth: {
@@ -31,22 +26,22 @@ const projects = {
     title: 'stealth',
     category: '',
     summary: 'currently building',
-    idea: '',
-    approach: '',
+    idea: 'coming soon',
+    approach: 'coming soon',
     demo: '',
   },
   spapl: {
     // image: 'assets/projects/quaver.svg', // e.g. 'assets/projects/spapl.jpg'
     image: '',
-    imagePosition: 'bottom', // e.g. 'center top' or '50% 30%'
-    imageFit: 'contain', // 'cover' crops to fill; 'contain' shows the whole image
-    showArtOverlay: true, // true keeps the original lettering and shapes over the image
+    imagePosition: 'bottom',
+    imageFit: 'contain',
+    showArtOverlay: true,
     title: 'spAPL',
     category: '',
     summary: 'a music sourcing tool',
     idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
-    approach: 'i taught myself ',
-    demo: 'projects/spapl.html',
+    approach: 'coming soon',
+    demo: '',
   },
   horsepower: {
     image: '',
@@ -62,14 +57,14 @@ const projects = {
   },
   ibm_quantum: {
     image: '',
-    imagePosition: 'center', // e.g. 'center top' or '50% 30%'
-    imageFit: 'cover', // 'cover' crops to fill; 'contain' shows the whole image
+    imagePosition: 'center',
+    imageFit: 'cover',
     showArtOverlay: false,
     title: 'ibm quantum hackathon',
     category: '',
     summary: "ibm's qiskit fall fest 2026",
-    idea: '',
-    approach: '',
+    idea: 'coming soon',
+    approach: 'coming soon',
     demo: '',
   },
   musical_studies: {
@@ -84,7 +79,7 @@ const projects = {
     approach: '',
     demo: '',
     beginning: "most people ask whether my parents were musicians; the answer is no.\n\n \
-    they both",
+    more coming soon",
   },
   rowing: {
     image: '',
@@ -95,7 +90,7 @@ const projects = {
     category: '',
     summary: "how i've been involved in the world of rowing",
     idea: '',
-    approach: '',
+    approach: 'coming soon',
     demo: '',
   },
   blank: {
@@ -198,7 +193,7 @@ dialog.addEventListener('click', event => {
   if (outside) dialog.close();
 });
 
-/* Copy email, with a visible fallback when clipboard access is unavailable. */
+/* copy email, with visible fallback when clipboard access unavailable */
 document.querySelector('#copy-email').addEventListener('click', async event => {
   const button = event.currentTarget;
   try {
@@ -212,8 +207,8 @@ document.querySelector('#copy-email').addEventListener('click', async event => {
   }
 });
 
-/* Native smooth anchor scrolling is in CSS. Reveals run once, with a 12px shift.
-   No scroll hijacking or parallax. Reduced motion is respected. */
+/* native smooth anchor scrolling is in css. reveals run once with 12px shift.
+   no scroll hijacking or parallax. reduced motion respected */
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if ('IntersectionObserver' in window) {
   const navLinks = document.querySelectorAll('nav a');
@@ -244,7 +239,7 @@ if ('IntersectionObserver' in window) {
   }
 }
 
-/* Optional native cursor: storage is optional, and touch devices stay native. */
+/* optional native cursor: storage optional, touch devices stay native. */
 const cursorToggle = document.querySelector('#cursor-toggle');
 let customCursor = settings.customCursorDefault;
 try {
