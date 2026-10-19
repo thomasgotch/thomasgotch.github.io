@@ -73,6 +73,7 @@ const projects = {
     summary: 'my journey and experiences with music',
     demo: '',
     beginning: "most people ask whether my parents were musicians; the answer is no.\n\n \
+    they had both studied a little bit of music, but had chosen to pursue other interests and hence not taken it very far. \
     more coming soon",
   },
   rowing: {
