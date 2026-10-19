@@ -18,7 +18,8 @@ const projects = {
     approach: '',
     demo: '',
     thetfordVoices: "my first volunteer experience was as a band musician in a charity near my home, called thetford voices. \
-      their work is aimed at sharing the gift of music with young people who otherwise wouldn't have the opportunity to partake, due to financial difficulties, illness, and other hardships.",
+      their work is aimed at sharing the gift of music with young people who otherwise wouldn't have the opportunity to partake, \
+      due to financial difficulties, illness, and other hardships.",
   },
   stealth: {
     image: '',
@@ -92,12 +93,12 @@ const projects = {
     category: '',
     summary: "how i've been involved in the world of rowing",
     idea: '',
-    approach: 'coming soon',
+    approach: '',
     demo: '',
-    achievements: "ranked #1 nationally in age group via gb u19 trials process in 2 consecutive years (2025 u18, 2026 u19) \n \
-      2x national champion, 1x 2nd place \n \
-      selected as captain for 2025-26 season at eton, school 1st viii \n \
-      recruited to cal heavyweight men's rowing '30",
+    achievements: "- ranked #1 nationally in age group via gb u19 trials process in 2 consecutive years (2025 u18, 2026 u19) \n \
+      - 2x national champion, 1x 2nd place \n \
+      - selected as captain for 2025-26 season at eton, school 1st viii \n \
+      - recruited to cal heavyweight men's rowing '30",
     beginning: "rowing was not a sport that i had ever thought about much until i was thrust into it during my first year at eton. \
       one of the coaches sends an email out to all housemasters at the beginning of every year, asking them to send their smallest \
       first-years down to the lake to try their hand at being a coxswain (the little guy who steers the boat and yells a bit). \
@@ -105,7 +106,7 @@ const projects = {
       the only guidance i had been given by older ‘wet bobs*’ in my house was that i needed lots of layers. \
       other than this crucial information, it was very much a trial by fire, with a rather steep learning curve. \n\n \
       *an eton term for a rower, as opposed to a ‘dry bob’ (cricket player)",
-    gettingToGrips: "",
+    gettingToGrips: "coming soon",
   },
   blank: {
     image: '',
