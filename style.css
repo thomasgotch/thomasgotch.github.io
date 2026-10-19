@@ -175,7 +175,7 @@ em {
   gap:20px
 }
 .hero-bottom p {
-  font-size:11px;
+  font-size:15px;
   line-height:1.9;
   color:var(--muted);
   margin:0
@@ -390,8 +390,8 @@ sup {
   letter-spacing:-1px;
   margin:0 0 21px!important
 }
-.about-grid p {
-  font-size:11px;
+.about-body p {
+  font-size:15px;
   line-height:1.95;
   color:var(--muted);
   margin:12px 0

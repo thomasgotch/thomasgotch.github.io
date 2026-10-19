@@ -11,6 +11,30 @@ const settings = {
    leave image empty to keep the original artwork.
    demo is a relative link; replace it with your own project URL. */
 const projects = {
+  volunteering: {
+    image: '',
+    imagePosition: '',
+    imageFit: 'cover', 
+    showArtOverlay: false,
+    title: 'volunteering',
+    category: '',
+    summary: 'my way to show gratitude for my opportunities',
+    idea: '',
+    approach: '',
+    demo: '',
+  },
+  stealth: {
+    image: '',
+    imagePosition: 'bottom', // e.g. 'center top' or '50% 30%'
+    imageFit: 'contain', // 'cover' crops to fill; 'contain' shows the whole image
+    showArtOverlay: true, // true keeps the original lettering and shapes over the image
+    title: 'stealth',
+    category: '',
+    summary: 'currently building',
+    idea: '',
+    approach: '',
+    demo: '',
+  },
   spapl: {
     // image: 'assets/projects/quaver.svg', // e.g. 'assets/projects/spapl.jpg'
     image: '',
@@ -31,7 +55,7 @@ const projects = {
     showArtOverlay: false,
     title: 'horsepower.vip',
     category: '',
-    summary: '',
+    summary: 'curating a community of petrolheads',
     idea: '',
     approach: '',
     demo: 'https://www.instagram.com/horsepower.vip/',
@@ -59,8 +83,8 @@ const projects = {
     idea: '',
     approach: '',
     demo: '',
-    beginning: "most people ask whether my parents were musicians; the answer is no.\
-    they had both had",
+    beginning: "most people ask whether my parents were musicians; the answer is no.\n\n \
+    they both",
   },
   rowing: {
     image: '',
@@ -85,7 +109,7 @@ const projects = {
     idea: '',
     approach: '',
     demo: '',
-  }
+  },
 };
 
 
