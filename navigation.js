@@ -1,4 +1,3 @@
-/* Independent of other page scripts: the unenhanced navigation stays visible. */
 (() => {
   const sidebar = document.querySelector('.sidebar');
   const content = document.querySelector('#sidebar-content');
