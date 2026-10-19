@@ -159,18 +159,45 @@ filters.forEach(button => {
 });
 
 /* project notes: native dialogs support esc and keyboard focus */
+
+/* inline popup images: ![description](assets/projects/photo.jpg)
+   text stays plain text; only image markers create image elements. */
+function renderProjectText(element, value) {
+  const text = typeof value === 'string' ? value : '';
+  element.replaceChildren();
+  const marker = /!\[([^\]\n]*)\]\(\s*(?:<([^>\n]+)>|([^\s)]+))\s*\)/g;
+  let offset = 0;
+  for (const match of text.matchAll(marker)) {
+    let source;
+    try {
+      source = new URL(match[2] || match[3], document.baseURI);
+      const localPreview = new URL(document.baseURI).protocol === 'file:';
+      if (!['https:', 'http:'].includes(source.protocol) && !(localPreview && source.protocol === 'file:')) continue;
+    } catch { continue; }
+    element.append(document.createTextNode(text.slice(offset, match.index)));
+    const image = document.createElement('img');
+    image.className = 'dialog-inline-image';
+    image.alt = match[1];
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.src = source.href;
+    element.append(image);
+    offset = match.index + match[0].length;
+  }
+  element.append(document.createTextNode(text.slice(offset)));
+}
+
 const dialog = document.querySelector('#project-dialog');
 document.querySelectorAll('[data-open]').forEach(button => {
   button.addEventListener('click', () => {
     const project = projects[button.dataset.open];
-    ['title', 'summary'].forEach(key => {
-      document.querySelector('#dialog-' + key).textContent = project[key] || '';
-    });
+    document.querySelector('#dialog-title').textContent = project.title || '';
+    renderProjectText(document.querySelector('#dialog-summary'), project.summary);
     // add sections in index.html using data-project-section="yourProjectField".
     dialog.querySelectorAll('[data-project-section]').forEach(section => {
       const value = project[section.dataset.projectSection];
       const content = typeof value === 'string' ? value.trim() : '';
-      section.querySelector('[data-section-content]').textContent = content;
+      renderProjectText(section.querySelector('[data-section-content]'), content);
       section.style.display = content ? '' : 'none';
     });
     const demoLink = document.querySelector('#dialog-demo');
