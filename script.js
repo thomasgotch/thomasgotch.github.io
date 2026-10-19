@@ -17,6 +17,7 @@ const projects = {
     idea: '',
     approach: 'coming soon',
     demo: '',
+    thetfordVoices: 'my first volunteer experience was as a band musician in a charity near my home, called thetford voices.',
   },
   stealth: {
     image: '',
