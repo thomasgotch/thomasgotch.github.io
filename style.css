@@ -175,13 +175,13 @@ em {
   gap:20px
 }
 .hero-bottom p {
-  font-size:15px;
+  font-size:13px;
   line-height:1.9;
   color:var(--muted);
   margin:0
 }
 .text-link {
-  font-size:11px;
+  font-size:13px;
   display:inline-flex;
   gap:24px;
   align-items:center;
@@ -363,17 +363,6 @@ sup {
   position:relative;
   z-index: 2;
 }
-.card-wide>.small {
-  font-size:7px;
-  letter-spacing:1.5px;
-  color:#a9c3be
-}
-.card-wide strong {
-  font-weight:400;
-  font-size:var(--title-size);
-  letter-spacing:-1px;
-  line-height:1.2
-}
 .about {
   margin-top:62px
 }
@@ -391,7 +380,7 @@ sup {
   margin:0 0 21px!important
 }
 .about-body p {
-  font-size:15px;
+  font-size:13px;
   line-height:1.95;
   color:var(--muted);
   margin:12px 0
@@ -439,7 +428,7 @@ sup {
   margin:0
 }
 .contact-main p {
-  font-size:10px;
+  font-size:13px;
   color:var(--muted);
   line-height:1.9
 }
@@ -449,7 +438,7 @@ sup {
   display:flex;
   justify-content:space-between;
   padding:15px 17px;
-  font-size:12px;
+  font-size:13px;
   margin-top:20px
 }
 .contact-button:hover {
