@@ -26,8 +26,7 @@ const projects = {
     showArtOverlay: true, // true keeps the original lettering and shapes over the image
     title: 'stealth',
     summary: 'currently building',
-    idea: 'coming soon',
-    approach: 'coming soon',
+    idea: 'something in the realm of fashion tech. more coming soon...',
     demo: '',
   },
   spapl: {
@@ -60,7 +59,7 @@ const projects = {
     showArtOverlay: false,
     title: 'ibm quantum hackathon',
     summary: "ibm's qiskit fall fest 2026",
-    idea: 'coming soon',
+    problem: 'coming soon',
     approach: 'coming soon',
     demo: '',
   },
@@ -73,7 +72,7 @@ const projects = {
     summary: 'my journey and experiences with music',
     demo: '',
     beginning: "most people ask whether my parents were musicians; the answer is no.\n\n \
-    they had both studied a little bit of music, but had chosen to pursue other interests and hence not taken it very far. \
+    they had both studied a little bit of music, but had chosen to pursue other interests and hence not taken it very far. \n\n \
     more coming soon",
   },
   rowing: {
@@ -91,11 +90,17 @@ const projects = {
     beginning: "rowing was not a sport that i had ever thought about much until i was thrust into it during my first year at eton. \
       one of the coaches sends an email out to all housemasters at the beginning of every year, asking them to send their smallest \
       first-years down to the lake to try their hand at being a coxswain (the little guy who steers the boat and yells a bit). \
-      at the time, i fit the ‘little guy’ bill quite perfectly and hence was instructed to be ‘on my bike’ (literally) and head to the lake. \n\n \
+      at the time, i fit the ‘little guy’ bill quite perfectly, and so i was instructed to be ‘on my bike’ (literally) and head to the lake. \n\n \
       the only guidance i had been given by older ‘wet bobs*’ in my house was that i needed lots of layers. \
       other than this crucial information, it was very much a trial by fire, with a rather steep learning curve. \n\n \
+      \
       *an eton term for a rower, as opposed to a ‘dry bob’ (cricket player)",
-    gettingToGrips: "coming soon",
+    gettingToGrips: "i stuck through the first few months of rowing, struggling to balance the time commitment with my academic and musical endeavours, \
+    in order to see whether it was something that i wanted to take further.\n\n \
+    that year, my crew ended up winning the national championships, which made me realise that i had a talent for the sport. this, along with the \
+    friends i had already made, convinced me to return for another season. \n\n \
+    i knew that there was a pathway to prestigious universities through the top end of rowing, but that it was not a 'free pass' by any means, \
+    and would still take an incredible amount of determination",
   },
 };
 
