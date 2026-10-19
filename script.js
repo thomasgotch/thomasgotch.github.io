@@ -15,9 +15,10 @@ const projects = {
     category: '',
     summary: 'my way to show gratitude for my opportunities',
     idea: '',
-    approach: 'coming soon',
+    approach: '',
     demo: '',
-    thetfordVoices: 'my first volunteer experience was as a band musician in a charity near my home, called thetford voices.',
+    thetfordVoices: "my first volunteer experience was as a band musician in a charity near my home, called thetford voices. \
+      their work is aimed at sharing the gift of music with young people who otherwise wouldn't have the opportunity to partake, due to financial difficulties, illness, and other hardships.",
   },
   stealth: {
     image: '',
