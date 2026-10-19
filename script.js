@@ -60,7 +60,9 @@ const projects = {
     title: 'ibm quantum hackathon',
     summary: "ibm's qiskit fall fest 2026",
     problem: 'coming soon',
-    approach: 'coming soon',
+    approach: `coming soon
+    
+    ![winning team](assets/projects/ibm_hackathon.jpg)`,
     demo: '',
   },
   musical_studies: {
