@@ -94,13 +94,18 @@ const projects = {
     idea: '',
     approach: 'coming soon',
     demo: '',
+    achievements: "ranked #1 nationally in age group via gb u19 trials process in 2 consecutive years (2025 u18, 2026 u19) \n \
+      2x national champion, 1x 2nd place \n \
+      selected as captain for 2025-26 season at eton, school 1st viii \n \
+      recruited to cal heavyweight men's rowing '30",
     beginning: "rowing was not a sport that i had ever thought about much until i was thrust into it during my first year at eton. \
       one of the coaches sends an email out to all housemasters at the beginning of every year, asking them to send their smallest \
       first-years down to the lake to try their hand at being a coxswain (the little guy who steers the boat and yells a bit). \
       at the time, i fit the ‘little guy’ bill quite perfectly and hence was instructed to be ‘on my bike’ (literally) and head to the lake. \n\n \
       the only guidance i had been given by older ‘wet bobs*’ in my house was that i needed lots of layers. \
       other than this crucial information, it was very much a trial by fire, with a rather steep learning curve. \n\n \
-      *an eton term for a rower, as opposed to a ‘dry bob’ (cricket player)"
+      *an eton term for a rower, as opposed to a ‘dry bob’ (cricket player)",
+    gettingToGrips: "",
   },
   blank: {
     image: '',
