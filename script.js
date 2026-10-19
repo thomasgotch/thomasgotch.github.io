@@ -12,14 +12,12 @@ const projects = {
     imageFit: 'cover', 
     showArtOverlay: false,
     title: 'volunteering',
-    category: '',
     summary: 'my way to show gratitude for my opportunities',
-    idea: '',
-    approach: '',
-    demo: '',
     thetfordVoices: "my first volunteer experience was as a band musician in a charity near my home, called thetford voices. \
       their work is aimed at sharing the gift of music with young people who otherwise wouldn't have the opportunity to partake, \
       due to financial difficulties, illness, and other hardships.",
+    dorneyBoatClub: "coming soon",
+    stMarks: "coming soon",
   },
   stealth: {
     image: '',
@@ -27,7 +25,6 @@ const projects = {
     imageFit: 'contain', // 'cover' crops to fill; 'contain' shows the whole image
     showArtOverlay: true, // true keeps the original lettering and shapes over the image
     title: 'stealth',
-    category: '',
     summary: 'currently building',
     idea: 'coming soon',
     approach: 'coming soon',
@@ -40,7 +37,6 @@ const projects = {
     imageFit: 'contain',
     showArtOverlay: true,
     title: 'spAPL',
-    category: '',
     summary: 'a music sourcing tool',
     idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
     approach: 'coming soon',
@@ -52,7 +48,6 @@ const projects = {
     imageFit: 'cover', 
     showArtOverlay: false,
     title: 'horsepower.vip',
-    category: '',
     summary: 'curating a community of petrolheads',
     idea: '',
     approach: '',
@@ -64,7 +59,6 @@ const projects = {
     imageFit: 'cover',
     showArtOverlay: false,
     title: 'ibm quantum hackathon',
-    category: '',
     summary: "ibm's qiskit fall fest 2026",
     idea: 'coming soon',
     approach: 'coming soon',
@@ -76,10 +70,7 @@ const projects = {
     imageFit: 'cover',
     showArtOverlay: false,
     title: 'musical studies',
-    category: '',
     summary: 'my journey and experiences with music',
-    idea: '',
-    approach: '',
     demo: '',
     beginning: "most people ask whether my parents were musicians; the answer is no.\n\n \
     more coming soon",
@@ -90,10 +81,7 @@ const projects = {
     imageFit: 'cover', 
     showArtOverlay: false,
     title: 'rowing',
-    category: '',
     summary: "how i've been involved in the world of rowing",
-    idea: '',
-    approach: '',
     demo: '',
     achievements: "- ranked #1 nationally in age group via gb u19 trials process in 2 consecutive years (2025 u18, 2026 u19) \n \
       - 2x national champion, 1x 2nd place \n \
@@ -107,18 +95,6 @@ const projects = {
       other than this crucial information, it was very much a trial by fire, with a rather steep learning curve. \n\n \
       *an eton term for a rower, as opposed to a ‘dry bob’ (cricket player)",
     gettingToGrips: "coming soon",
-  },
-  blank: {
-    image: '',
-    imagePosition: '',
-    imageFit: 'cover', 
-    showArtOverlay: false,
-    title: '',
-    category: '',
-    summary: '',
-    idea: '',
-    approach: '',
-    demo: '',
   },
 };
 
@@ -179,7 +155,7 @@ const dialog = document.querySelector('#project-dialog');
 document.querySelectorAll('[data-open]').forEach(button => {
   button.addEventListener('click', () => {
     const project = projects[button.dataset.open];
-    ['title', 'category', 'summary'].forEach(key => {
+    ['title', 'summary'].forEach(key => {
       document.querySelector('#dialog-' + key).textContent = project[key] || '';
     });
     // add sections in index.html using data-project-section="yourProjectField".
