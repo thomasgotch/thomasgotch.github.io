@@ -7,9 +7,9 @@
     <meta name="description" content="a simple snake game.">
     <title>snake</title>
     <link rel="icon" type="image/png" href="../assets/favicon.png">
-    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="snake.css?v=mobile-match">
     <link rel="stylesheet" href="../assets/brand.css">
-    <script src="snake.js" defer></script>
+    <script src="snake.js?v=mobile-match" defer></script>
   </head>
   <body>
     <!-- edit: initials and home link, for a game in the projects folder. -->
@@ -37,12 +37,6 @@
         <button id="restart-button" type="button">restart</button>
       </div>
 
-      <div class="dpad" role="group" aria-label="direction controls">
-        <button class="up" data-direction="up" aria-label="up">&#9650;</button>
-        <button class="left" data-direction="left" aria-label="left">&#9664;</button>
-        <button class="right" data-direction="right" aria-label="right">&#9654;</button>
-        <button class="down" data-direction="down" aria-label="down">&#9660;</button>
-      </div>
       <p id="game-status" class="sr-only" role="status" aria-live="polite">ready</p>
     </main>
   </body>

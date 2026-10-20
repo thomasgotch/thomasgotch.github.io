@@ -7,7 +7,10 @@
   --cursor-default:url("../assets/rat.png") 5 5, auto;
   /* --cursor-pointer:url("assets/rat.png"), pointer; */
   --cursor-pointer:pointer;
-  font-family: 'Cascadia Code', 'Courier New', monospace;
+  font-family: 'DM Mono', 'Cascadia Code', 'Courier New', monospace;
+  font-synthesis: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   color: #e2eae7;
   background: var(--bg);
 }
@@ -64,28 +67,11 @@ button:disabled { opacity: .35; cursor: default; }
 .screen-message button:focus-visible { outline-color: var(--ink); }
 .controls { display: flex; gap: 10px; margin-top: 14px; }
 .controls button { flex: 1; }
-.dpad { display: none; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); }
-@media (pointer: coarse), (hover: none) {
-  .dpad {
-    display: grid;
-    grid-template-columns: repeat(3, 48px);
-    grid-template-rows: repeat(3, 44px);
-    justify-content: center;
-    gap: 3px;
-    margin-top: 18px;
-  }
-  .dpad button { padding: 8px; }
-  .up { grid-area: 1 / 2; }
-  .left { grid-area: 2 / 1; }
-  .right { grid-area: 2 / 3; }
-  .down { grid-area: 3 / 2; }
-}
 @media (max-height: 740px) and (pointer: coarse) {
   body { padding-block: 80px 16px; }
   .game { width: min(100%, 340px); }
   .game-header { margin-bottom: 12px; }
-  .dpad { margin-top: 12px; }
 }
 
 

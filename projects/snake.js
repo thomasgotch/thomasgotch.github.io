@@ -158,9 +158,6 @@ function initializeSnake() {
   play.addEventListener('click', () => start());
   pauseButton.addEventListener('click', pause);
   document.querySelector('#restart-button').addEventListener('click', restart);
-  document.querySelectorAll('[data-direction]').forEach(button => {
-    button.addEventListener('click', () => { steer(button.dataset.direction); canvas.focus({ preventScroll: true }); });
-  });
   document.addEventListener('keydown', event => {
     if (event.ctrlKey || event.metaKey || event.altKey || event.isComposing) return;
     if (event.target.closest('input, select, textarea, [contenteditable="true"]')) return;
