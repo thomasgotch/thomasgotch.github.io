@@ -191,6 +191,7 @@ const dialog = document.querySelector('#project-dialog');
 document.querySelectorAll('[data-open]').forEach(button => {
   button.addEventListener('click', () => {
     const project = projects[button.dataset.open];
+    document.querySelector('#dialog-small-title').textContent = 'notes on ' + project.title || '';
     document.querySelector('#dialog-title').textContent = project.title || '';
     renderProjectText(document.querySelector('#dialog-summary'), project.summary);
     // add sections in index.html using data-project-section="yourProjectField".

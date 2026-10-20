@@ -380,7 +380,7 @@ sup {
   font-size:13px;
   line-height:1.95;
   color:var(--muted);
-  margin:12px 0
+  margin:12px 0;
 }
 .toolbox {
   padding-top:4px
