@@ -15,9 +15,24 @@ const projects = {
     summary: 'my way to show gratitude for my opportunities',
     thetfordVoices: "my first volunteer experience was as a band musician in a charity near my home, called thetford voices. \
       their work is aimed at sharing the gift of music with young people who otherwise wouldn't have the opportunity to partake, \
-      due to financial difficulties, illness, and other hardships.",
-    dorneyBoatClub: "coming soon",
-    stMarks: "coming soon",
+      due to financial difficulties, illnesses and disabilities, and other hardships. \n\n \
+      i really enjoyed working with these children and giving them a chance to experience singing in a choir, \
+      especially given that choir was the thing which sparked my own musical career. \n\n \
+      i still volunteer every summer and christmas holiday with thetford voices when i'm home, and have\
+      made good friends with some of the other volunteers.",
+    dorneyBoatClub: "having enjoyed spending time volunteering with thetford voices, i started looking for more ways to \
+      share my favourite things with others who have been less fortunate. \n\n \
+      rowing was an obvious choice; it is a very expensive sport and so is generally only done at prestigious schools with \
+      ample sporting budget. however, i discovered that there was a local boat club which wanted to make rowing more \
+      accessible, and so used some of eton's facilities to provide more young people from the community with a chance to \
+      row. i started volunteering at dorney boat club every week during term time, along with some of my close eton friends from \
+      rowing. one element of rowing which i particularly wanted to share was the camaraderie and community which is built between \
+      rowers, and i'd say that my friends and i did a good job at showing that.",
+    stMarks: "now that i am away in america for university, i had to leverage my limited connections in the country to see if \
+      there were any opportunities for more volunteer work that i could reasonably fit into my schedule. my organ teacher from eton \
+      was kind enough to connect me with one of her old organist friends in berkeley, who is the director of music at st mark's, a \
+      small parish church on bancroft way. since the start of this semester, i've been singing here on a weekly basis in order to \
+      help others have a (hopefully) more enjoyable church service with choral music.",
   },
   stealth: {
     image: '',
@@ -102,7 +117,7 @@ const projects = {
     that year, my crew ended up winning the national championships, which made me realise that i had a talent for the sport. this, along with the \
     friends i had already made, convinced me to return for another season. \n\n \
     i knew that there was a pathway to prestigious universities through the top end of rowing, but that it was not a 'free pass' by any means, \
-    and would still take an incredible amount of determination",
+    and would still take an incredible amount of determination. more coming soon",
   },
 };
 
