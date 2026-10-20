@@ -8,7 +8,7 @@
   --navy:#172b4d;
   --dark-card:#14263c;
   --cursor-default:url("assets/rat.png") 5 5, auto;
-  --cursor-pointer:pointer;
+  --cursor-pointer:url("assets/small\ cheese.png") 5 5, pointer;
   
   --title-size:52px;
   font-family:'DM Mono','Cascadia Code','Courier New',monospace;
