@@ -24,15 +24,15 @@ const projects = {
       share my favourite things with others who have been less fortunate. \n\n \
       rowing was an obvious choice; it is a very expensive sport and so is generally only done at prestigious schools with \
       ample sporting budget. however, i discovered that there was a local boat club which wanted to make rowing more \
-      accessible, and so used some of eton's facilities to provide more young people from the community with a chance to \
-      row. i started volunteering at dorney boat club every week during term time, along with some of my close eton friends from \
+      accessible, and so used some of eton's facilities to provide more young people from the community with a chance to row. \n\n \
+      i started volunteering at dorney boat club every week during term time, along with some of my close eton friends from \
       rowing. one element of rowing which i particularly wanted to share was the camaraderie and community which is built between \
       rowers, and i'd say that my friends and i did a good job at showing that.",
     stMarks: "now that i am away in america for university, i had to leverage my limited connections in the country to see if \
       there were any opportunities for more volunteer work that i could reasonably fit into my schedule. my organ teacher from eton \
       was kind enough to connect me with one of her old organist friends in berkeley, who is the director of music at st mark's, a \
-      small parish church on bancroft way. since the start of this semester, i've been singing here on a weekly basis in order to \
-      help others have a (hopefully) more enjoyable church service with choral music.",
+      small parish church on bancroft way. \n\n since the start of this semester, i've been singing here on a weekly basis in order to \
+      help others have a (hopefully) more enjoyable church experience with choral music.",
   },
   stealth: {
     image: '',
