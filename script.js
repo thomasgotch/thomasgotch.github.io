@@ -62,6 +62,7 @@ const projects = {
       i used the spotify api to scrape all the data from the song/playlist requested, then download each song by searching for it using a query string on youtube \
       and using the returned link to download it using yt-dlp. i also added an override function to always ensure that the right version of the song on youtube was allocated to \
       the spotify song id.",
+    challenges: "",
     demo: '',
   },
   horsepower: {
