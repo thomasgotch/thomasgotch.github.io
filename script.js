@@ -53,7 +53,15 @@ const projects = {
     title: 'spAPL',
     summary: 'a music sourcing tool',
     idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
-    approach: 'coming soon',
+    approach: "with this being my first technical project, i had to teach myself how to code (before vibe coding became big), and did lots of thinking about \
+      how i might bypass the paywall. \n\n \
+      initially, i wrote a script which would automatically create me a new gmail account based on my existing one (using the + modifier to bypass recaptcha), \
+      and then use this email to generate a new paypal and spotify account, then link them together to have unlimited 1-mo free trials. however, paypal eventually \
+      caught on and started blocking my ip. i didn't want to go down the spoofing route, so instead thought to localise the operation by just downloading all the \
+      songs rather than trying to use spotify. \n\n \
+      i used the spotify api to scrape all the data from the song/playlist requested, then download each song by searching for it using a query string on youtube \
+      and using the returned link to download it using yt-dlp. i also added an override function to always ensure that the right version of the song on youtube was allocated to \
+      the spotify song id.",
     demo: '',
   },
   horsepower: {
