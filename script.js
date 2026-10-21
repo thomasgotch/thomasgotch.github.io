@@ -62,7 +62,11 @@ const projects = {
       i used the spotify api to scrape all the data from the song/playlist requested, then download each song by searching for it using a query string on youtube \
       and using the returned link to download it using yt-dlp. i also added an override function to always ensure that the right version of the song on youtube was allocated to \
       the spotify song id.",
-    challenges: "",
+    results: "i was successfully able to maintain this project and share it with friends and family for a few months. however, i eventually became tired of the constant maintenance \
+      (since youtube changed their cypher relatively frequently to try and break projects like these), and so disbanded the project once i had downloaded most of the songs that i enjoyed \
+      listening to. \n\n \
+      overall, i see this project as the first time that i was able to dedicate myself to building and shipping a meaningful product, and also a very useful experience for learning to code; \
+      i wrote the project in python, but also taught myself a small amount of html/css/js in order to create a gui so that friends and family wouldn't be scared by a cli.",
     demo: '',
   },
   horsepower: {
@@ -99,7 +103,19 @@ const projects = {
     demo: '',
     beginning: "most people ask whether my parents were musicians; the answer is no.\n\n \
     they had both studied a little bit of music, but had chosen to pursue other interests and hence not taken it very far. \n\n \
-    more coming soon",
+    however, i am very grateful for the commitment that they have had in supporting my musical development. \n\n \
+    this was first made manifest when i was scouted to sing at a cathedral choir near my school at age seven (st edmundsbury cathedral). \
+    my mum had to taxi me from home to choir, then to school, then back to choir, almost every day. it was incredibly draining for her and so we decided \
+    that it would be best for me to move to a choir school - not only to save on fuel costs, but also to further my development as a \
+    chorister by moving to a better choir (wells cathedral). \n\n \
+    i also picked up the cello during this time, and found it to be a fun hobby, but hadn't yet reachd a level where i felt able to express myself \
+    through my instrument.",
+    mainDevelopment: "my main musical development happened after transferring schools again: we found that wells was too far from home \
+    for a nine-year-old (roughly a six hour drive), and so i moved to winchester cathedral when i was ten. here, i started learning \
+    the cello more seriously, and also picked up the piano. i was able to progress on the piano very quickly and it soon became of a \
+    similar standard to my cello playing.",
+    musicAtEton: "",
+    musicNow: "",
   },
   rowing: {
     image: '',
