@@ -382,6 +382,9 @@ sup {
   color:var(--muted);
   margin:12px 0;
 }
+.about .underline {
+  text-decoration: underline;
+}
 .toolbox {
   padding-top:4px
 }
