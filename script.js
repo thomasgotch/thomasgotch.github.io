@@ -110,7 +110,7 @@ const projects = {
     chorister by moving to a better choir (wells cathedral). \n\n \
     i also picked up the cello during this time, and found it to be a fun hobby, but hadn't yet reachd a level where i felt able to express myself \
     through my instrument.",
-    mainDevelopment: "my main musical development happened after transferring schools again: we found that wells was too far from home \
+    firstMainDevelopment: "my first main musical development happened after transferring schools again: we found that wells was too far from home \
     for a nine-year-old (roughly a six hour drive), and so i moved to winchester cathedral when i was ten. here, i started learning \
     the cello more seriously, and also picked up the piano. i was able to progress on the piano very quickly and it soon became of a \
     similar standard to my cello playing.",
