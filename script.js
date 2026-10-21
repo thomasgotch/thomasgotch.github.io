@@ -59,8 +59,8 @@ const projects = {
       and then use this email to generate a new paypal and spotify account, then link them together to have unlimited 1-mo free trials. however, paypal eventually \
       caught on and started blocking my ip. i didn't want to go down the spoofing route, so instead thought to localise the operation by just downloading all the \
       songs rather than trying to use spotify. \n\n \
-      i used the spotify api to scrape all the data from the song/playlist requested, then download each song by searching for it using a query string on youtube \
-      and using the returned link to download it using yt-dlp. i also added an override function to always ensure that the right version of the song on youtube was allocated to \
+      i extracted all the data from the song/playlist requested with the spotify api, then used this data to search for the song(s) with a query string on youtube, \
+      and finally downloaded each song with yt-dlp. i also added an override function to always ensure that the right version of the song on youtube was allocated to \
       the spotify song id.",
     results: "i was successfully able to maintain this project and share it with friends and family for a few months. however, i eventually became tired of the constant maintenance \
       (since youtube changed their cypher relatively frequently to try and break projects like these), and so disbanded the project once i had downloaded most of the songs that i enjoyed \
