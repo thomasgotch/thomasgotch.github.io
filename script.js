@@ -52,7 +52,7 @@ const projects = {
     showArtOverlay: true,
     title: 'spAPL',
     summary: 'a music sourcing tool',
-    idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
+    idea: "spotify api 'premium' listening: a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)",
     approach: "with this being my first technical project, i had to teach myself how to code (before vibe coding became big), and did lots of thinking about \
       how i might bypass the paywall. \n\n \
       initially, i wrote a script which would automatically create me a new gmail account based on my existing one (using the + modifier to bypass recaptcha), \
@@ -62,7 +62,7 @@ const projects = {
       i extracted all the data from the song/playlist requested with the spotify api, then used this data to search for the song(s) with a query string on youtube, \
       and finally downloaded each song with yt-dlp. i also added an override function to always ensure that the right version of the song on youtube was allocated to \
       the spotify song id.",
-    results: "i was successfully able to maintain this project and share it with friends and family for a few months. however, i eventually became tired of the constant maintenance \
+    results: "i was successfully able to maintain spAPL and share it with friends and family for a few months. however, i eventually became tired of the constant maintenance \
       (since youtube changed their cypher relatively frequently to try and break projects like these), and so disbanded the project once i had downloaded most of the songs that i enjoyed \
       listening to. \n\n \
       overall, i see this project as the first time that i was able to dedicate myself to building and shipping a meaningful product, and also a very useful experience for learning to code; \
