@@ -52,8 +52,21 @@ const projects = {
     showArtOverlay: true,
     title: 'spAPL',
     summary: 'a music sourcing tool',
-    idea: 'a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)',
-    approach: 'coming soon',
+    idea: "spotify api 'premium' listening: a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)",
+    approach: "with this being my first technical project, i had to teach myself how to code (before vibe coding became big), and did lots of thinking about \
+      how i might bypass the paywall. \n\n \
+      initially, i wrote a script which would automatically create me a new gmail account based on my existing one (using the + modifier to bypass recaptcha), \
+      and then use this email to generate a new paypal and spotify account, then link them together to have unlimited 1-mo free trials. however, paypal eventually \
+      caught on and started blocking my ip. i didn't want to go down the spoofing route, so instead thought to localise the operation by just downloading all the \
+      songs rather than trying to use spotify. \n\n \
+      i extracted all the data from the song/playlist requested with the spotify api, then used this data to search for the song(s) with a query string on youtube, \
+      and finally downloaded each song with yt-dlp. i also added an override function to always ensure that the right version of the song on youtube was allocated to \
+      the spotify song id.",
+    results: "i was successfully able to maintain spAPL and share it with friends and family for a few months. however, i eventually became tired of the constant maintenance \
+      (since youtube changed their cypher relatively frequently to try and break projects like these), and so disbanded the project once i had downloaded most of the songs that i enjoyed \
+      listening to. \n\n \
+      overall, i see this project as the first time that i was able to dedicate myself to building and shipping a meaningful product, and also a very useful experience for learning to code; \
+      i wrote the project in python, but also taught myself a small amount of html/css/js in order to create a gui so that friends and family wouldn't be scared by a cli.",
     demo: '',
   },
   horsepower: {
@@ -90,7 +103,19 @@ const projects = {
     demo: '',
     beginning: "most people ask whether my parents were musicians; the answer is no.\n\n \
     they had both studied a little bit of music, but had chosen to pursue other interests and hence not taken it very far. \n\n \
-    more coming soon",
+    however, i am very grateful for the commitment that they have had in supporting my musical development. \n\n \
+    this was first made manifest when i was scouted to sing at a cathedral choir near my school at age seven (st edmundsbury cathedral). \
+    my mum had to taxi me from home to choir, then to school, then back to choir, almost every day. it was incredibly draining for her and so we decided \
+    that it would be best for me to move to a choir school - not only to save on fuel costs, but also to further my development as a \
+    chorister by moving to a better choir (wells cathedral). \n\n \
+    i also picked up the cello during this time, and found it to be a fun hobby, but hadn't yet reachd a level where i felt able to express myself \
+    through my instrument.",
+    firstMainDevelopment: "my first main musical development happened after transferring schools again: we found that wells was too far from home \
+    for a nine-year-old (roughly a six hour drive), and so i moved to winchester cathedral when i was ten. here, i started learning \
+    the cello more seriously, and also picked up the piano. i was able to progress on the piano very quickly and it soon became of a \
+    similar standard to my cello playing.",
+    musicAtEton: "",
+    musicNow: "",
   },
   rowing: {
     image: '',

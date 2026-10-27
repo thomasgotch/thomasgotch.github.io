@@ -349,16 +349,10 @@ sup {
   color:var(--muted);
   padding-top:3px
 }
+/* wide cards share the same height and text layout as the other artwork */
 .card-wide {
-  height:270px;
   background:var(--dark-card);
-  display:flex;
-  justify-content:space-between;
   padding:35px;
-  gap:25;
-  flex-direction:column;
-  position:relative;
-  z-index: 2;
 }
 .about {
   margin-top:62px
