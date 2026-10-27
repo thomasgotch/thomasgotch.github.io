@@ -41,7 +41,7 @@ const projects = {
     showArtOverlay: true, // true keeps the original lettering and shapes over the image
     title: 'stealth',
     summary: 'currently building',
-    idea: 'something in the realm of fashion tech. more coming soon...',
+    idea: 'something in the realm of fashion tech. think depop and vinted, but with more consumer agency. more coming soon...',
     demo: '',
   },
   spapl: {
