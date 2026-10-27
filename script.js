@@ -147,7 +147,7 @@ const projects = {
 };
 
 
-/* apply optional project images; original artwork stays visible until load succeeds */
+/* project images */
 function applyProjectImages() {
   document.querySelectorAll('[data-project]').forEach(card => {
     const project = projects[card.dataset.project];
