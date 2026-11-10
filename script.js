@@ -53,6 +53,7 @@ const projects = {
     title: 'spAPL',
     summary: 'a music sourcing tool',
     idea: "spotify api 'premium' listening: a tool to download spotify tracks and playlists to be used offline (for non-commerical purposes, and only with the rights to the music of course)",
+    inspo: "i hate paying full price, and would much rather save money whilst learning new skills and enjoying the process",
     approach: "with this being my first technical project, i had to teach myself how to code (before vibe coding became big), and did lots of thinking about \
       how i might bypass the paywall. \n\n \
       initially, i wrote a script which would automatically create me a new gmail account based on my existing one (using the + modifier to bypass recaptcha), \
@@ -66,7 +67,8 @@ const projects = {
       (since youtube changed their cypher relatively frequently to try and break projects like these), and so disbanded the project once i had downloaded most of the songs that i enjoyed \
       listening to. \n\n \
       overall, i see this project as the first time that i was able to dedicate myself to building and shipping a meaningful product, and also a very useful experience for learning to code; \
-      i wrote the project in python, but also taught myself a small amount of html/css/js in order to create a gui so that friends and family wouldn't be scared by a cli.",
+      i wrote the project in python, but also taught myself a small amount of html/css/js in order to create a gui so that friends and family wouldn't be scared by a cli. \n\n \
+      it was very satisfying to me, and made me realise that i have an itch which can only be scratched by building.",
     demo: '',
   },
   horsepower: {
@@ -87,10 +89,12 @@ const projects = {
     showArtOverlay: false,
     title: 'ibm quantum hackathon',
     summary: "ibm's qiskit fall fest 2026",
-    problem: 'coming soon',
+    problem: "we were given a fixed 15-qubit circuit to run on ibm's kingston quantum processor. the task was to \
+    estimate how often two particular qubits in the circuit produced matching or different results.\ ",
     approach: `coming soon
     
     ![winning team](assets/projects/ibm_hackathon.jpg)`,
+    results: "",
     demo: '',
   },
   musical_studies: {
