@@ -124,7 +124,7 @@ const projects = {
     fulfilled by the positive impact of my music. \n\n \
     i also started composing, and enjoyed the freedom i had to teach myself to write in whatever style i wanted. i've shared a couple of my pieces [here](https://drive.google.com/drive/folders/1t-P7TQI11FRyDfuqWL3JTo64Qx01FTSD?usp=sharing), and i'm currently working on \
     writing a full orchestral requiem mass.",
-    musicNow: "now, i still play cello and piano for fun, and take organ lessons to bring it up to the same professional standard as my other instruments. \n\n \
+    musicNow: "now, i still play cello and piano for fun, and take organ lessons to bring my playing up to the same professional standard as my other instruments. \n\n \
     i have also started singing as a volunteer at st mark's, berkeley, as well as professionally at the church of the advent of christ the king, which is located in the heart of sf's \
     music scene (across the road from sf jazz, and around the corner from sf symphony & opera).",
   },
@@ -241,6 +241,8 @@ function renderProjectText(element, value) {
       link.className = 'dialog-inline-link';
       link.textContent = label;
       link.href = source.href;
+      link.target = '_blank';
+      link.rel = 'noopener';
       element.append(link);
     }
     offset = match.index + match[0].length;
