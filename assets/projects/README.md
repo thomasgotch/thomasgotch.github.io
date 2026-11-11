@@ -49,3 +49,13 @@ idea: `![a screenshot](<assets/projects/my screenshot (1).png>)`,
 ```
 
 full HTTPS image URLs also work. use a public image URL, rather than a page containing an image. other text remains plain text, so HTML tags are not interpreted.
+
+## links within popup text
+
+put `[link text](url)` anywhere in a project string in `script.js`:
+
+```js
+idea: `i built this to explore a new idea. read [the project notes](https://example.com/notes) for more.`,
+```
+
+this works in `summary`, `idea`, `approach`, and custom popup sections. use a full web url or a path relative to the home page, such as `[play snake](projects/snake.html)`. if a url contains parentheses or spaces, wrap it in angle brackets: `[project notes](<https://example.com/notes_(2026)>)`. you can mix links and images in the same string.

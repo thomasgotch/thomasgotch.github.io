@@ -211,28 +211,38 @@ filters.forEach(button => {
 
 /* project notes: native dialogs support esc and keyboard focus */
 
-/* inline popup images: ![description](assets/projects/photo.jpg)
-   text stays plain text; only image markers create image elements. */
+/* popup text: [link text](url) and ![image description](image-path)
+   all other content stays plain text. */
 function renderProjectText(element, value) {
   const text = typeof value === 'string' ? value : '';
   element.replaceChildren();
-  const marker = /!\[([^\]\n]*)\]\(\s*(?:<([^>\n]+)>|([^\s)]+))\s*\)/g;
+  const marker = /(!?)\[([^\]\n]*)\]\(\s*(?:<([^>\n]+)>|([^\s)]+))\s*\)/g;
+  const base = new URL(document.baseURI);
   let offset = 0;
   for (const match of text.matchAll(marker)) {
+    const [, isImage, label, bracketedPath, path] = match;
+    if (!isImage && !label.trim()) continue;
     let source;
     try {
-      source = new URL(match[2] || match[3], document.baseURI);
-      const localPreview = new URL(document.baseURI).protocol === 'file:';
-      if (!['https:', 'http:'].includes(source.protocol) && !(localPreview && source.protocol === 'file:')) continue;
+      source = new URL(bracketedPath || path, base);
+      if (!['https:', 'http:'].includes(source.protocol) && !(base.protocol === 'file:' && source.protocol === 'file:')) continue;
     } catch { continue; }
     element.append(document.createTextNode(text.slice(offset, match.index)));
-    const image = document.createElement('img');
-    image.className = 'dialog-inline-image';
-    image.alt = match[1];
-    image.loading = 'lazy';
-    image.decoding = 'async';
-    image.src = source.href;
-    element.append(image);
+    if (isImage) {
+      const image = document.createElement('img');
+      image.className = 'dialog-inline-image';
+      image.alt = label;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.src = source.href;
+      element.append(image);
+    } else {
+      const link = document.createElement('a');
+      link.className = 'dialog-inline-link';
+      link.textContent = label;
+      link.href = source.href;
+      element.append(link);
+    }
     offset = match.index + match[0].length;
   }
   element.append(document.createTextNode(text.slice(offset)));
