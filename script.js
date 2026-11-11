@@ -122,7 +122,7 @@ const projects = {
     picked up the organ (which had been a goal of mine for a very long time), and started performing as a freelance musician at various events, such as weddings and \
     funerals. i thoroughly enjoyed the process of organising and planning events according to client requests, as well as arranging music to fit the occasion, and felt very \
     fulfilled by the positive impact of my music. \n\n \
-    i also started composing, and enjoyed the freedom i had to teach myself to write in whatever style i wanted. i've shared a couple of my pieces here, and i'm currently working on \
+    i also started composing, and enjoyed the freedom i had to teach myself to write in whatever style i wanted. i've shared a couple of my pieces [here](https://drive.google.com/drive/folders/1t-P7TQI11FRyDfuqWL3JTo64Qx01FTSD?usp=sharing), and i'm currently working on \
     writing a full orchestral requiem mass.",
     musicNow: "now, i still play cello and piano for fun, and take organ lessons to bring it up to the same professional standard as my other instruments. \n\n \
     i have also started singing as a volunteer at st mark's, berkeley, as well as professionally at the church of the advent of christ the king, which is located in the heart of sf's \
