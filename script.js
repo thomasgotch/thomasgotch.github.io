@@ -112,14 +112,21 @@ const projects = {
     my mum had to taxi me from home to choir, then to school, then back to choir, almost every day. it was incredibly draining for her and so we decided \
     that it would be best for me to move to a choir school - not only to save on fuel costs, but also to further my development as a \
     chorister by moving to a better choir (wells cathedral). \n\n \
-    i also picked up the cello during this time, and found it to be a fun hobby, but hadn't yet reachd a level where i felt able to express myself \
+    i also picked up the cello during this time, and found it to be a fun hobby, but hadn't yet reached a level where i felt able to express myself \
     through my instrument.",
     firstMainDevelopment: "my first main musical development happened after transferring schools again: we found that wells was too far from home \
-    for a nine-year-old (roughly a six hour drive), and so i moved to winchester cathedral when i was ten. here, i started learning \
+    for a nine-year-old (roughly a six hour drive), and so i moved to winchester cathedral. here, i started learning \
     the cello more seriously, and also picked up the piano. i was able to progress on the piano very quickly and it soon became of a \
     similar standard to my cello playing.",
-    musicAtEton: "",
-    musicNow: "",
+    musicAtEton: "at eton, i continued to develop my cello, piano, and singing skills, achieving a distinction in the abrsm grade 8 exam for all of them. i also \
+    picked up the organ (which had been a goal of mine for a very long time), and started performing as a freelance musician at various events, such as weddings and \
+    funerals. i thoroughly enjoyed the process of organising and planning events according to client requests, as well as arranging music to fit the occasion, and felt very \
+    fulfilled by the positive impact of my music. \n\n \
+    i also started composing, and enjoyed the freedom i had to teach myself to write in whatever style i wanted. i've shared a couple of my pieces here, and i'm currently working on \
+    writing a full orchestral requiem mass.",
+    musicNow: "now, i still play cello and piano for fun, and take organ lessons to bring it up to the same professional standard as my other instruments. \n\n \
+    i have also started singing as a volunteer at st mark's, berkeley, as well as professionally at the church of the advent of christ the king, which is located in the heart of sf's \
+    music scene (across the road from sf jazz, and around the corner from sf symphony & opera).",
   },
   rowing: {
     image: '',
