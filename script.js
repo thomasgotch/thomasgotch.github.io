@@ -31,7 +31,8 @@ const projects = {
     stMarks: "now that i am away in america for university, i had to leverage my limited connections in the country to see if \
       there were any opportunities for more volunteer work that i could reasonably fit into my schedule. my organ teacher from eton \
       was kind enough to connect me with one of her old organist friends in berkeley, who is the director of music at st mark's, a \
-      small parish church on bancroft way. \n\n since the start of this semester, i've been singing here on a weekly basis in order to \
+      small parish church on bancroft way. \n\n \
+      since the start of this semester, i've been singing here on a weekly basis in order to \
       help others have a (hopefully) more enjoyable church experience with choral music.",
   },
   stealth: {
@@ -45,7 +46,6 @@ const projects = {
     demo: '',
   },
   spapl: {
-    // image: 'assets/projects/quaver.svg', // e.g. 'assets/projects/spapl.jpg'
     image: '',
     imagePosition: 'bottom',
     imageFit: 'contain',
@@ -124,9 +124,11 @@ const projects = {
     fulfilled by the positive impact of my music. \n\n \
     i also started composing, and enjoyed the freedom i had to teach myself to write in whatever style i wanted. i've shared a couple of my pieces [here](https://drive.google.com/drive/folders/1t-P7TQI11FRyDfuqWL3JTo64Qx01FTSD?usp=sharing), and i'm currently working on \
     writing a full orchestral requiem mass.",
-    musicNow: "now, i still play cello and piano for fun, and take organ lessons to bring my playing up to the same professional standard as my other instruments. \n\n \
+    currently: "now, i still play cello and piano for fun, and take organ lessons to bring my playing up to the same professional standard as my other instruments. \n\n \
     i have also started singing as a volunteer at st mark's, berkeley, as well as professionally at the church of the advent of christ the king, which is located in the heart of sf's \
-    music scene (across the road from sf jazz, and around the corner from sf symphony & opera).",
+    music scene (across the road from sf jazz, and around the corner from sf symphony & opera). \n\n \
+    i've found music to be an incredible tool for expressing and processing difficult emotions, as well as bonding with others and finding new friends; for example, i have most recently found \
+    two choral communities which feel familiar and remind me of home.",
   },
   rowing: {
     image: '',
@@ -141,19 +143,21 @@ const projects = {
       - selected as captain for 2025-26 season at eton, school 1st viii \n \
       - recruited to cal heavyweight men's rowing '30",
     beginning: "rowing was not a sport that i had ever thought about much until i was thrust into it during my first year at eton. \
-      one of the coaches sends an email out to all housemasters at the beginning of every year, asking them to send their smallest \
-      first-years down to the lake to try their hand at being a coxswain (the little guy who steers the boat and yells a bit). \
-      at the time, i fit the ‘little guy’ bill quite perfectly, and so i was instructed to be ‘on my bike’ (literally) and head to the lake. \n\n \
-      the only guidance i had been given by older ‘wet bobs*’ in my house was that i needed lots of layers. \
-      other than this crucial information, it was very much a trial by fire, with a rather steep learning curve. \n\n \
-      \
-      *an eton term for a rower, as opposed to a ‘dry bob’ (cricket player)",
+    one of the coaches sends an email out to all housemasters at the beginning of every year, asking them to send their smallest \
+    first-years down to the lake to try their hand at being a coxswain (the little guy who steers the boat and yells a bit). \
+    at the time, i fit the ‘little guy’ bill quite perfectly, and so i was instructed to be ‘on my bike’ (literally) and head to the lake. \n\n \
+    the only guidance i had been given by older ‘wet bobs*’ in my house was that i needed lots of layers. \
+    other than this crucial information, it was very much a trial by fire, with a rather steep learning curve. \n\n \
+    \
+    *an eton term for a rower, as opposed to a ‘dry bob’ (cricket player)",
     gettingToGrips: "i stuck through the first few months of rowing, struggling to balance the time commitment with my academic and musical endeavours, \
     in order to see whether it was something that i wanted to take further.\n\n \
     that year, my crew ended up winning the national championships, which made me realise that i had a talent for the sport. this, along with the \
     friends i had already made, convinced me to return for another season. \n\n \
     i knew that there was a pathway to prestigious universities through the top end of rowing, but that it was not a 'free pass' by any means, \
-    and would still take an incredible amount of determination. more coming soon",
+    and would still take an incredible amount of determination.",
+    lockingIn: "i continued on my path of rowing",
+    currently: ""
   },
 };
 
